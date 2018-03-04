@@ -5,30 +5,71 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-  <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.png" alt="Логотип Gllasy Shop">
-    </a>
-
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li> <a href=#>Каталог</a> </li>
-        <li> <a href=#>Доставка и оплата</a> </li>
-        <li> <a href=#>О Компании</a> </li>
-      </ul>
-    </nav>
-    <div class="header-options">
-      <a href=#>Поиск</a>
-      <a href=#>Вход</a> <!--Нужно ли этот элемент делать списком с заделом на то, что пользователь зайдет, и у него будет много опций?-->
-      <a href=#>Корзина</a>
-    </div>
-    <div>
-      <span class="header-options-time">С 10 до 20</span>
-      <a class="header-options-phone" href=#>8 812 450 25 25</a>
-    </div>
-  </header>
-
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/logo.png" alt="Логотип Gllasy Shop">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li> <a href=#>Каталог</a> </li>
+          <ul class="nav-catalog hidden">
+            <li class="nav-catalog-top">Новинки</li>
+            <li>Сливочное</li>
+            <li>Щербеты</li>
+            <li>Фруктовый лед</li>
+            <li>Мелорин</li>
+          </ul>
+          <li> <a href=#>Доставка и оплата</a> </li>
+          <li> <a href=#>О Компании</a> </li>
+        </ul>
+      </nav>
+      <div class="header-options">
+        <a href=#>Поиск</a>
+        <form class="search hidden">
+          <label class="hidden" for="search-input">Что ищем?</label>
+         <input type="text" value="Что ищем?" id="search-input"></input><br>
+        </form>
+        <a href=#>Вход</a>
+        <form class="entry hidden">
+          <label class="hidden" for="entry-mail">Электронная почта</label>
+         <input type="text" value="Электронная почта" id="entry-mail"></input><br>
+         <label class="hidden" for="entry-pass">Пароль</label>
+         <input type="password" value="Пароль" id="entry-pass"></input><br>
+         <label class="hidden" for="entry-btn">Войти</label>
+         <input type="submit" value="Войти" id="entry-btn">
+         <a href=#>Забыли пароль?</a>
+         <a href=#>Новая регистрация</a>
+        </form>
+        <a href=#>Корзина</a>
+        <div class="basket-content">
+          <table>
+            <tr class="basket-item">
+              <td>x</td>
+              <td><img src=#></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span class="basket-price">200 руб</span></td>
+              <td>300 руб</td>
+            </tr>
+            <tr class="basket-item">
+              <td>x</td>
+              <td><img src=#></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span class="basket-price">300 руб</span></td>
+              <td>450 руб</td>
+            </tr>
+          </table>
+          <p class="total-price">Итого: 750 руб</p>
+          <form>
+            <label class="hidden" for="basket-btn">Оформить заказ</label>
+            <input type="submit" id="basket-btn" value="Оформить заказ"></input>
+          </form>
+        </div>
+      </div>
+      <div>
+        <span class="header-options-time">С 10 до 20</span>
+        <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
+      </div>
+    </header>
   <main class="container">
     <div class="catalog-path">
       <a href="#">Главная</a>
@@ -37,41 +78,49 @@
       >>
       <a href="#">Сливочное</a>
     </div>
-    <h2>Сливочное мороженое</h2>
+    <h1>Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтры</h2>
-      <div class="sorting">
-        <p>Сортировка:</p>
-        <form>
-          <input value="По популярности">
-        </form>
-      </div>
-      <div class="price">
-        <p>Цена: <span class="price-value">100 руб. - 500 руб.</span></p>
-      </div>
-      <div class="fat">
-        <form>
-          <input type="radio" name="fat-value">0%</input>
-          <input type="radio" name="fat-value" checked>до 10%</input>
-          <input type="radio" name="fat-value">до 30%</input>
-          <input type="radio" name="fat-value">выше 30%</input>
-        </form>
-      </div>
-      <div class="filler">
-        <p>Наполнители:</p>
-        <form>
-          <input type="checkbox" name="filler-value">шоколадные</input>
-          <input type="checkbox" name="filler-value">сахарные присыпки</input>
-          <input type="checkbox" name="filler-value">фрукты</input>
-          <input type="checkbox" name="filler-value">сиропы</input>
-          <input type="checkbox" name="filler-value">джемы</input>
-        </form>
-      </div>
-      <div class="filter-btn">
-        <form>
-          <button>Применить</button>
-        </form>
-      </div>
+      <form>
+        <fieldset class="sorting">
+          <p>Сортировка:</p>
+          <label class="hidden" for="sorting-top">По популярности</label>
+          <select size="4" id="sorting-top">
+            <option value="по популярности" selected>по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option selected value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </select>
+        </fieldset>
+        <fieldset class="price">
+          <p>Цена: <span class="price-value">100 руб. - 500 руб.</span></p>
+        </fieldset>
+        <fieldset class="fat">
+          <label class="hidden" for="fat-0">0%</label>
+          <input type="radio" name="fat-value" id="fat-0">0%</input>
+          <label class="hidden" for="fat-10">до 10%</label>
+          <input type="radio" name="fat-value" id="fat-10" checked>до 10%</input>
+          <label class="hidden" for="fat-30">до 30%</label>
+          <input type="radio" name="fat-value" id="fat-30">до 30%</input>
+          <label class="hidden" for="fat-max">выше 30%</label>
+          <input type="radio" name="fat-value" id="fat-max">выше 30%</input>
+        </fieldset>
+        <fieldset class="filler">
+          <p>Наполнители:</p>
+          <label class="hidden" for="filler-choko">шоколадные</label>
+          <input type="checkbox" name="filler-value" id="filler-choko">шоколадные</input>
+          <label class="hidden" for="filler-sugar">сахарные присыпки</label>
+          <input type="checkbox" name="filler-value" id="filler-sugar">сахарные присыпки</input>
+          <label class="hidden" for="filler-fruit">фрукты</label>
+          <input type="checkbox" name="filler-value" id="filler-fruit">фрукты</input>
+          <label class="hidden" for="filler-syrop">сиропы</label>
+          <input type="checkbox" name="filler-value" id="filler-syrop">сиропы</input>
+          <label class="hidden" for="filler-jam">джемы</label>
+          <input type="checkbox" name="filler-value" id="filler-jam">джемы</input>
+        </fieldset>
+        <label class="hidden" for="filter-btn">Применить</label>
+        <input type="submit" id="filter-btn" value="Применить"></input>
+      </form>
     </section>
 
     <section class="catalog-list">
@@ -85,6 +134,9 @@
           <span class="catalog-list-item-price-number">310 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -94,6 +146,9 @@
         <div class="catalog-list-item-price">
           <span class="catalog-list-item-price-number">380 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
+        </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
         </div>
       </div>
       <div class="catalog-list-item">
@@ -105,6 +160,9 @@
           <span class="catalog-list-item-price-number">355 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -114,6 +172,9 @@
         <div class="catalog-list-item-price">
           <span class="catalog-list-item-price-number">415 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
+        </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
         </div>
       </div>
       <div class="catalog-list-item">
@@ -125,6 +186,9 @@
           <span class="catalog-list-item-price-number">325 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -134,6 +198,9 @@
         <div class="catalog-list-item-price">
           <span class="catalog-list-item-price-number">410 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
+        </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
         </div>
       </div>
       <div class="catalog-list-item">
@@ -145,6 +212,9 @@
           <span class="catalog-list-item-price-number">375 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -154,6 +224,9 @@
         <div class="catalog-list-item-price">
           <span class="catalog-list-item-price-number">320 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
+        </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
         </div>
       </div>
       <div class="catalog-list-item">
@@ -165,6 +238,9 @@
           <span class="catalog-list-item-price-number">440 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -174,6 +250,9 @@
         <div class="catalog-list-item-price">
           <span class="catalog-list-item-price-number">435 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
+        </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
         </div>
       </div>
       <div class="catalog-list-item">
@@ -185,6 +264,9 @@
           <span class="catalog-list-item-price-number">355 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="catalog-list-item">
         <a href=#>
@@ -195,21 +277,23 @@
           <span class="catalog-list-item-price-number">420 Р</span>
           <span class="catalog-list-item-price-unit">/кг</span>
         </div>
+        <div class="catalog-list-item-btn">
+          <a href=#>Быстрый просмотр</a>
+        </div>
       </div>
       <div class="page-counter">
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>></li>
+          <li><a href=#><</a></li>
+          <li><a href=#>1</a></li>
+          <li><a href=#>2</a></li>
+          <li><a href=#>3</a></li>
+          <li><a href=#>4</a></li>
+          <li><a href=#>5</a></li>
+          <li><a href=#>></a></li>
         </ul>
       </div>
     </section>
-
   </main>
-
   <footer>
     <section class="footer-social">
       <ul class="footer-social-btns">
@@ -221,7 +305,7 @@
     </section>
     <div class="footer-links">
       <ul class=footer-links-list>
-        <li><a href=#><b>Для поставщиков</b></a></li>
+        <li><a class="for-suppliers" href=#>Для поставщиков</a></li>
         <li><a href=#>О производстве</a></li>
         <li><a href=#>Наши документы</a></li>
         <li><a href=#>Экологические стандарты</a></li>

@@ -5,53 +5,88 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-  <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.png" alt="Логотип Gllasy Shop">
-    </a>
-
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li> <a href=#>Каталог</a> </li>
-        <li> <a href=#>Доставка и оплата</a> </li>
-        <li> <a href=#>О Компании</a> </li>
-      </ul>
-    </nav>
-    <div class="header-options">
-      <a href=#>Поиск</a>
-      <a href=#>Вход</a> <!--Нужно ли этот элемент делать списком с заделом на то, что пользователь зайдет, и у него будет много опций?-->
-      <a href=#>Корзина</a>
-    </div>
-    <div>
-      <span class="header-options-time">С 10 до 20</span>
-      <a class="header-options-phone" href=#>8 812 450 25 25</a>
-    </div>
-  </header>
+    <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/logo.png" alt="Логотип Gllasy Shop">
+      </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li> <a href="catalog.html">Каталог</a> </li>
+          <ul class="nav-catalog hidden">
+            <li class="nav-catalog-top">Новинки</li>
+            <li>Сливочное</li>
+            <li>Щербеты</li>
+            <li>Фруктовый лед</li>
+            <li>Мелорин</li>
+          </ul>
+          <li> <a href=#>Доставка и оплата</a> </li>
+          <li> <a href=#>О Компании</a> </li>
+        </ul>
+      </nav>
+      <div class="header-options">
+        <a href=#>Поиск</a>
+        <form class="search hidden">
+          <label class="hidden" for="search-input">Что ищем?</label>
+         <input type="text" value="Что ищем?" id="search-input"></input><br>
+        </form>
+        <a href=#>Вход</a>
+        <form class="entry hidden">
+          <label class="hidden" for="entry-mail">Электронная почта</label>
+         <input type="text" value="Электронная почта" id="entry-mail"></input><br>
+         <label class="hidden" for="entry-pass">Пароль</label>
+         <input type="password" value="Пароль" id="entry-pass"></input><br>
+         <label class="hidden" for="entry-btn">Войти</label>
+         <input type="submit" value="Войти" id="entry-btn">
+         <a href=#>Забыли пароль?</a>
+         <a href=#>Новая регистрация</a>
+        </form>
+        <a href=#>Корзина</a>
+        <div class="basket-content">
+          <table>
+            <tr class="basket-item">
+              <td>x</td>
+              <td><img src=#></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span class="basket-price">200 руб</span></td>
+              <td>300 руб</td>
+            </tr>
+            <tr class="basket-item">
+              <td>x</td>
+              <td><img src=#></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span class="basket-price">300 руб</span></td>
+              <td>450 руб</td>
+            </tr>
+          </table>
+          <p class="total-price">Итого: 750 руб</p>
+          <form>
+            <label class="hidden" for="basket-btn">Оформить заказ</label>
+            <input type="submit" id="basket-btn" value="Оформить заказ"></input>
+          </form>
+        </div>
+      </div>
+      <div>
+        <span class="header-options-time">С 10 до 20</span>
+        <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
+      </div>
+    </header>
     <main class="container">
       <h1 class="visually-hidden">Магазин мороженого "Gllasy shop"</h1>
       <section class="advert-block">
-        <img src="img/big_icecream.png" alt="Два больших вкусных рожка"><!--заменить на фон?-->
-        <h1 class=advert-block-header>Крем-брюле и пломбир с малиновым джемом</h1> <!--или это b?-->
-        <form>
-          <button class="advert-block-btn">Давайте оба!</button>
-        </form>
+        <b> Крем-брюле и пломбир с малиновым джемом </b>
+        <a class="advert-block-btn" href=#>Давайте оба!</a>
       </section>
       <div class="bonus">
         <h2 class="visually-hidden">Подарки покупателям</h2>
         <section class="bonus-item">
           <b>Малинка даром!</b>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <form>
-            <button class="bonus-item-btn">Хочу варенье!</button>
-          </form>
+          <a class="bonus-item-btn" href=#>Хочу варенье!</a>
         </section>
         <section class="bonus-item">
           <b>Шоколадки даром!</b>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <form>
-            <button class="bonus-item-btn">Хочу шоколадки!</button>
-          </form>
+          <a class="bonus-item-btn" href=#>Хочу шоколадки!</a>
         </section>
       </div>
       <section class="popular">
@@ -65,6 +100,9 @@
             <span class="popular-item-price-number">310 Р</span>
             <span class="popular-item-price-unit">/кг</span>
           </div>
+          <div class="popular-item-btn">
+            <a href=#>Быстрый просмотр</a>
+          </div>
         </div>
         <div class="popular-item">
           <a href=#>
@@ -74,6 +112,9 @@
           <div class="popular-item-price">
             <span class="popular-item-price-number">380 Р</span>
             <span class="popular-item-price-unit">/кг</span>
+          </div>
+          <div class="popular-item-btn">
+            <a href=#>Быстрый просмотр</a>
           </div>
         </div>
         <div class="popular-item">
@@ -85,6 +126,9 @@
             <span class="popular-item-price-number">355 Р</span>
             <span class="popular-item-price-unit">/кг</span>
           </div>
+          <div class="popular-item-btn">
+            <a href=#>Быстрый просмотр</a>
+          </div>
         </div>
         <div class="popular-item">
           <a href=#>
@@ -94,6 +138,9 @@
           <div class="popular-item-price">
             <span class="popular-item-price-number">415 Р</span>
             <span class="popular-item-price-unit">/кг</span>
+          </div>
+          <div class="popular-item-btn">
+            <a href=#>Быстрый просмотр</a>
           </div>
         </div>
       </section>
@@ -112,14 +159,16 @@
         <article class="blog">
           <p>Новое в нашем блоге</p>
           <a href=#>
-            <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+            <h1>10 способов сервировки фруктовых щербетов к столу</h1>
           </a>
         </article>
         <section class="news-distrib">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form>
-            <input type="text" value="Электронная почта"></input>
-            <button>Отправить</button>
+            <label class="hidden" for="news-mail">Электронная почта</label>
+            <input type="text" value="Электронная почта" id="news-mail"></input>
+            <label class="hidden" for="news-btn">Отправить</label>
+            <input type="submit" value="Отправить" id="news-btn"></input>
           </form>
         </section>
       </div>
@@ -130,11 +179,21 @@
           <p>Адрес главного офиса и офлайн-магазина:</p>
           <p class="map-adress-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p>Для заказов по телеофну:</p>
-          <span class="map-phone"> 8 812 450-25-25</span>
+          <span class="map-phone"><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
           <p>(с 10 до 20 ежедневно)</p>
-          <form>
-            <button>Форма обратной связи</button>
+          <a class="open-feedback" href=#>Форма обратной связи</a>
+          <form class="feedback hidden">
+            <b>Мы обязательно вам ответим!</b>
+            <label class="hidden" for="feedback-name">Как вас зовут?</label>
+            <input type="text" value="Как вас зовут?" id="feedback-name"></input><br>
+            <label class="hidden" for="feedback-mail">Ваша почта для ответа??</label>
+            <input type="text" value="Ваша почта для ответа?" id="feedback-mail"></input><br>
+            <label class="hidden" for="feedback-write">Напишите что-нибудь...</label>
+            <textarea value="Напишите что-нибудь..." rows="3" id="feedback-write"></textarea><br>
+            <label class="hidden" for="feedback-btn">Отправить</label>
+            <input type="submit" value="Отправить" id="feedback-btn">
           </form>
+
         </section>
       </section>
     </main>
@@ -149,7 +208,7 @@
       </section>
       <div class="footer-links">
         <ul class=footer-links-list>
-          <li><a href=#><b>Для поставщиков</b></a></li>
+          <li><a class="for-suppliers" href=#>Для поставщиков</a></li>
           <li><a href=#>О производстве</a></li>
           <li><a href=#>Наши документы</a></li>
           <li><a href=#>Экологические стандарты</a></li>
@@ -159,7 +218,5 @@
         <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a>©2017</p>
       </div>
     </footer>
-
-
   </body>
 </html>
