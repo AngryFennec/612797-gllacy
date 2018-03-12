@@ -27,14 +27,14 @@
         <a href=#>Поиск</a>
         <form class="search visually-hidden">
           <label class="visually-hidden" for="search-input">Что ищем?</label>
-         <input type="search" value="Что ищем?" id="search-input" tabindex="-1"></input><br>
+         <input type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input><br>
         </form>
         <a href=#>Вход</a>
         <form class="entry visually-hidden">
           <label class="visually-hidden" for="entry-mail">Электронная почта</label>
-         <input type="email" value="Электронная почта" id="entry-mail"  tabindex="-1"></input><br>
+         <input type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input><br>
          <label class="visually-hidden" for="entry-pass">Пароль</label>
-         <input type="password" value="Пароль" id="entry-pass"  tabindex="-1"></input><br>
+         <input type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input><br>
          <label class="visually-hidden" for="entry-btn">Войти</label>
          <input type="submit" value="Войти" id="entry-btn"  tabindex="-1">
          <a href=#>Забыли пароль?</a>
@@ -165,7 +165,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form>
             <label class="visually-hidden" for="news-mail">Электронная почта</label>
-            <input type="email" value="Электронная почта" id="news-mail"></input>
+            <input type="email" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
             <input type="submit" value="Отправить" id="news-btn"></input>
           </form>
         </section>
@@ -183,11 +183,11 @@
           <form class="feedback visually-hidden">
             <b>Мы обязательно вам ответим!</b>
             <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-            <input type="text" value="Как вас зовут?" id="feedback-name" tabindex="-1"></input><br>
+            <input type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input><br>
             <label class="visually-hidden" for="feedback-mail">Ваша почта для ответа??</label>
-            <input type="email" value="Ваша почта для ответа?" id="feedback-mail" tabindex="-1"></input><br>
+            <input type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input><br>
             <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
-            <textarea value="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1"></textarea><br>
+            <textarea placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea><br>
             <label class="visually-hidden" for="feedback-btn">Отправить</label>
             <input type="submit" value="Отправить" id="feedback-btn" tabindex="-1">
           </form>
