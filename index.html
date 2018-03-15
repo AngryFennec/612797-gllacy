@@ -14,16 +14,18 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <ul class="nav-catalog visually-hidden">
-            <li class="nav-catalog-top">Новинки</li>
-            <li>Сливочное</li>
-            <li>Щербеты</li>
-            <li>Фруктовый лед</li>
-            <li>Мелорин</li>
-          </ul>
-          <li><a href=#>Доставка и оплата</a></li>
-          <li><a href=#>О Компании</a></li>
+          <li><a class="header-button" href="catalog.html">Каталог</a></li>
+          <li>
+            <ul class="nav-catalog visually-hidden">
+              <li class="nav-catalog-top">Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+          </li>
+          <li><a class="header-button" href=#>Доставка и оплата</a></li>
+          <li><a class="header-button" href=#>О Компании</a></li>
         </ul>
       </nav>
       <div class="header-options">
@@ -210,8 +212,7 @@
               <input type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
               <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
               <textarea placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
-              <label class="visually-hidden" for="feedback-btn">Отправить</label>
-              <input type="submit" value="Отправить" id="feedback-btn" tabindex="-1">
+              <input type="submit" class="default-button" value="Отправить" id="feedback-btn" tabindex="-1">
             </form>
           </div>
         </section>
