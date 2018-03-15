@@ -42,8 +42,6 @@ footer {
   content:url("../img/heart.svg");
   height:13px;
   width:15px;
-  margin-left:-20px;
-  padding-right:5px;
 }
 .map {
   background: url("../img/map.jpg") no-repeat center center;
@@ -59,28 +57,63 @@ footer {
 }
 
 .default-button {
-  background-color:#e84d37;
+  background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.54);
   color:#ffffff;
   font-family:"Roboto", Arial, sans-serif;
   font-size:16px;
   line-height:18px;
   font-weight:700;
-
+}
+.default-button:hover{
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    color:#fefefe;
+    font-family:"Roboto", Arial, sans-serif;
+    font-size:16px;
+    line-height:18px;
+    font-weight:700;
+  }
+.default-button:active{
+    background-image: -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+    color:#fceeec;
+    font-family:"Roboto", Arial, sans-serif;
+    font-size:16px;
+    line-height:18px;
+    font-weight:700;
 
 }
 a.header-button:hover{
-  background-color:#f7f6f3;
   color:#333333;
+  background-color: rgb(247, 246, 243);
 }
 a.header-button:active{
-  background-color:#f7f6f3;
   color:#333333;
+  background-color: rgba(248, 247, 244, 0.988);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 .header-options-text{
   font-size:14px;
   line-height:16px;
   font-weight:500;
 }
+.header-options-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+.header-options-btn:hover{
+    background-color: rgb(248, 247, 244);
+    color:#323232;  
+    }
+
 .advert-block-header{
   font-size:60px;
   line-height:60.35px;
@@ -114,6 +147,9 @@ a.header-button:active{
   line-height:22px;
   font-weight:500;
 }
+.features{
+  color:#333333;
+}
 .features b{
   font-size:24px;
   line-height:30px;
@@ -127,6 +163,9 @@ a.header-button:active{
 .feature-list{
   list-style:none;
 }
+.blog {
+  color:#333333;
+}
 .blog p{
   font-size:16px;
   line-height:22px;
@@ -137,8 +176,11 @@ a.header-button:active{
   line-height:30px;
   font-weight:700;
   text-decoration:underline;
+  color:#333333;
 }
-
+.news-distrib{
+  color:#333333;
+}
 .news-distrib p{
   font-size:16px;
   line-height:22px;
