@@ -81,12 +81,12 @@
       >>
       <a href="#">Сливочное</a>
     </div>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="catalog-header">Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтры</h2>
       <form method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="sorting">
-          <label for="sorting-top">Сортировка:</label>
+          <label class="filter-label" for="sorting-top">Сортировка:</label>
           <select size="4" id="sorting-top">
             <option value="по популярности" selected>по популярности</option>
             <option value="сначала недорогие">сначала недорогие</option>
@@ -95,9 +95,10 @@
           </select>
         </fieldset>
         <fieldset class="price">
-          <p>Цена: <span class="price-value">100 руб. - 500 руб.</span></p>
+          <p class="filter-label">Цена: <span class="price-value">100 руб. - 500 руб.</span></p>
         </fieldset>
         <fieldset class="fat">
+          <p  class="filter-label">Жирность</p>
           <label for="fat-0">0%</label>
           <input type="radio" name="fat-value" id="fat-0"></input>
           <label  for="fat-10">до 10%</label>
@@ -108,7 +109,7 @@
           <input type="radio" name="fat-value" id="fat-max"></input>
         </fieldset>
         <fieldset class="filler">
-          <p>Наполнители:</p>
+          <p class="filter-label">Наполнители:</p>
           <label for="filler-choko">шоколадные</label>
           <input type="checkbox" name="filler-value" id="filler-choko"></input>
           <label  for="filler-sugar">сахарные присыпки</label>
@@ -120,7 +121,7 @@
           <label  for="filler-jam">джемы</label>
           <input type="checkbox" name="filler-value" id="filler-jam"></input>
         </fieldset>
-        <input type="submit" id="filter-btn" value="Применить"></input>
+        <input type="submit" class="filter-btn" id="filter-btn" value="Применить"></input>
       </form>
     </section>
 
