@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -35,7 +38,7 @@
          <input type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
          <label class="visually-hidden" for="entry-pass">Пароль</label>
          <input type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
-         <input type="submit" value="Войти" id="entry-btn"  tabindex="-1">
+         <input type="submit" class="default-button" value="Войти" id="entry-btn"  tabindex="-1">
          <a href=#>Забыли пароль?</a>
          <a href=#>Новая регистрация</a>
         </form>
@@ -59,7 +62,7 @@
           </table>
           <p class="total-price">Итого: 750 руб</p>
           <form>
-            <input type="submit" id="basket-btn" value="Оформить заказ"></input>
+            <input type="submit" class="default-button" id="basket-btn" value="Оформить заказ"></input>
           </form>
         </div>
       </div>
@@ -91,19 +94,19 @@
       </section>
       <section class="advert-block">
         <b>Крем-брюле и пломбир с малиновым джемом</b>
-        <a class="advert-block-btn" href=#>Давайте оба!</a>
+        <a class="advert-block-btn default-button" href=#>Давайте оба!</a>
       </section>
       <div class="bonus">
         <h2 class="visually-hidden">Подарки покупателям</h2>
         <section class="bonus-item">
           <b>Малинка даром!</b>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="bonus-item-btn" href=#>Хочу варенье!</a>
+          <a class="bonus-item-btn default-button" href=#>Хочу варенье!</a>
         </section>
         <section class="bonus-item">
           <b>Шоколадки даром!</b>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="bonus-item-btn" href=#>Хочу шоколадки!</a>
+          <a class="bonus-item-btn default-button" href=#>Хочу шоколадки!</a>
         </section>
       </div>
       <section class="popular">
@@ -118,7 +121,7 @@
             <span class="popular-item-price-unit">/кг</span>
           </div>
           <div class="popular-item-btn">
-            <a href=#>Быстрый просмотр</a>
+            <a class="default-button" href=#>Быстрый просмотр</a>
           </div>
         </div>
         <div class="popular-item">
@@ -131,7 +134,7 @@
             <span class="popular-item-price-unit">/кг</span>
           </div>
           <div class="popular-item-btn">
-            <a href=#>Быстрый просмотр</a>
+            <a class="default-button" href=#>Быстрый просмотр</a>
           </div>
         </div>
         <div class="popular-item">
@@ -144,7 +147,7 @@
             <span class="popular-item-price-unit">/кг</span>
           </div>
           <div class="popular-item-btn">
-            <a href=#>Быстрый просмотр</a>
+            <a class="default-button" href=#>Быстрый просмотр</a>
           </div>
         </div>
         <div class="popular-item">
@@ -157,7 +160,7 @@
             <span class="popular-item-price-unit">/кг</span>
           </div>
           <div class="popular-item-btn">
-            <a href=#>Быстрый просмотр</a>
+            <a class="default-button" href=#>Быстрый просмотр</a>
           </div>
         </div>
       </section>
@@ -184,32 +187,33 @@
           <form  method="post" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="news-mail">Электронная почта</label>
             <input type="email" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
-            <input type="submit" value="Отправить" id="news-btn"></input>
+            <input type="submit" class="default-button" value="Отправить" id="news-btn" ></input>
           </form>
         </section>
       </div>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <img src="img/map_icon" alt="Иконка мороженого на карте">
-        <section class="adress">
-          <p>Адрес главного офиса и офлайн-магазина:</p>
-          <p class="map-adress-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-          <p>Для заказов по телеофну:</p>
-          <span class="map-phone"><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
-          <p>(с 10 до 20 ежедневно)</p>
-          <a class="open-feedback" href=#>Форма обратной связи</a>
-          <form class="feedback visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
-            <b>Мы обязательно вам ответим!</b>
-            <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-            <input type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
-            <label class="visually-hidden" for="feedback-mail">Ваша почта для ответа??</label>
-            <input type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
-            <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
-            <textarea placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
-            <label class="visually-hidden" for="feedback-btn">Отправить</label>
-            <input type="submit" value="Отправить" id="feedback-btn" tabindex="-1">
-          </form>
-
+        <div class="adress-container">
+          <section class="adress">
+            <p>Адрес главного офиса и офлайн-магазина:</p>
+            <p class="map-adress-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+            <p>Для заказов по телефону:</p>
+            <span class="map-phone"><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
+            <p>(с 10 до 20 ежедневно)</p>
+            <a class="open-feedback" href=#>Форма обратной связи</a>
+            <form class="feedback visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
+              <b>Мы обязательно вам ответим!</b>
+              <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+              <input type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
+              <label class="visually-hidden" for="feedback-mail">Ваша почта для ответа?</label>
+              <input type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+              <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
+              <textarea placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
+              <label class="visually-hidden" for="feedback-btn">Отправить</label>
+              <input type="submit" value="Отправить" id="feedback-btn" tabindex="-1">
+            </form>
+          </div>
         </section>
       </section>
     </main>

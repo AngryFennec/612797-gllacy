@@ -1,0 +1,70 @@
+body {
+  padding:0;
+  margin:0;
+  font-family:"Roboto", Arial, sans-serif;
+  font-size:16px;
+  line-height:18px;
+  font-weight:bold;
+  color:#ffffff;
+  background-color:#849d8f;
+}
+
+.visually-hidden{
+  display:none;
+}
+a {
+  color:#ffffff;
+  text-decoration:none;
+  border-bottom:1px solid rgba(255, 255, 255, .2);;
+}
+
+.main-navigation{
+}
+.site-navigation, .nav-catalog{
+  list-style:none;
+}
+
+footer a:hover, a:active{
+  color:#ffbc9e;
+}
+.footer-social-btns, .footer-links-list {
+  list-style:none;
+}
+
+footer {
+  font-size:13px;
+  font-weight:normal;
+}
+.for-suppliers {
+  font-weight:bold;
+}
+.for-suppliers::before{
+  content:url("../img/heart.svg");
+  height:13px;
+  width:15px;
+  margin-left:-20px;
+  padding-right:5px;
+}
+.map {
+  background: url("../img/map.jpg") no-repeat center center;
+}
+.adress-container{
+  display:flex;
+  justify-content:flex-end;
+}
+.adress{
+  background:#ffffff;
+  color:#000000;
+
+}
+
+.default-button {
+  background-color:#e84d37;
+  color:#ffffff;
+  font-family:"Roboto", Arial, sans-serif;
+  font-size:16px;
+  line-height:18px;
+  font-weight:bold;
+  
+
+}
