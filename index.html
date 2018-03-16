@@ -29,17 +29,17 @@
         </ul>
       </nav>
       <div class="header-options">
-        <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""</a>
+        <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
         <form class="search visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search-input">Что ищем?</label>
-         <input type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
+         <input class="default-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
         </form>
         <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
         <form class="entry visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="entry-mail">Электронная почта</label>
-         <input type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+         <input class="default-input" type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
          <label class="visually-hidden" for="entry-pass">Пароль</label>
-         <input type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
+         <input class="default-input" type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
          <input type="submit" class="default-button" value="Войти" id="entry-btn"  tabindex="-1">
          <a href=#>Забыли пароль?</a>
          <a href=#>Новая регистрация</a>
@@ -188,7 +188,7 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form  method="post" action="https://echo.htmlacademy.ru">
             <label class="visually-hidden" for="news-mail">Электронная почта</label>
-            <input type="email" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
+            <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
             <input type="submit" class="default-button news-form" value="Отправить" id="news-btn" ></input>
           </form>
         </section>
@@ -207,12 +207,12 @@
             <form class="feedback visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
               <b>Мы обязательно вам ответим!</b>
               <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-              <input type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
+              <input class="default-input" type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
               <label class="visually-hidden" for="feedback-mail">Ваша почта для ответа?</label>
-              <input type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+              <input class="default-input" type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
               <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
-              <textarea placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
-              <input type="submit" class="default-button" value="Отправить" id="feedback-btn" tabindex="-1">
+              <textarea class="default-input" placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
+              <input type="submit" class="default-button feedback-button" value="Отправить" id="feedback-btn" tabindex="-1">
             </form>
           </div>
         </section>

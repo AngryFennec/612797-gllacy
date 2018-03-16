@@ -29,22 +29,22 @@
         </ul>
       </nav>
       <div class="header-options">
-        <a href=#>Поиск</a>
+        <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
         <form class="search visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="search-input">Что ищем?</label>
-         <input type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
+         <input class="default-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
         </form>
-        <a href=#>Вход</a>
+        <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
         <form class="entry visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="entry-mail">Электронная почта</label>
-         <input type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+         <input class="default-input" type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
          <label class="visually-hidden" for="entry-pass">Пароль</label>
-         <input type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
+         <input class="default-input" type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
          <input type="submit" class="default-button" value="Войти" id="entry-btn"  tabindex="-1">
          <a href=#>Забыли пароль?</a>
          <a href=#>Новая регистрация</a>
         </form>
-        <a href=#>Корзина</a>
+        <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
         <div class="basket-content">
           <table>
             <tr class="basket-item">
@@ -87,10 +87,10 @@
       <form method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="sorting">
           <label class="filter-label" for="sorting-top">Сортировка:</label>
-          <select size="4" id="sorting-top">
+          <select class="sorting-options" size="1" id="sorting-top" >
             <option value="по популярности" selected>по популярности</option>
             <option value="сначала недорогие">сначала недорогие</option>
-            <option selected value="сначала дорогие">сначала дорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
             <option value="по жирности">по жирности</option>
           </select>
         </fieldset>
@@ -284,14 +284,14 @@
         </div>
       </div>
       <div class="page-counter">
-        <ul>
-          <li><a href=#><</a></li>
-          <li><a href=#>1</a></li>
-          <li><a href=#>2</a></li>
-          <li><a href=#>3</a></li>
-          <li><a href=#>4</a></li>
-          <li><a href=#>5</a></li>
-          <li><a href=#>></a></li>
+        <ul class="page-counters">
+          <li class="page-counter-item unable"><a href=#><</a></li>
+          <li class="page-counter-item current"><a href=#>1</a></li>
+          <li class="page-counter-item"><a href=#>2</a></li>
+          <li class="page-counter-item"><a href=#>3</a></li>
+          <li class="page-counter-item"><a href=#>4</a></li>
+          <li class="page-counter-item"><a href=#>5</a></li>
+          <li class="page-counter-item"><a href=#>></a></li>
         </ul>
       </div>
     </section>
