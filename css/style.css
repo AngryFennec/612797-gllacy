@@ -135,7 +135,9 @@ a.header-button:active{
   font-size: 60px;
   line-height: 60.35px;
 }
-.advert-block-btn, .advert-block-btn:hover, .advert-block-btn:active{
+.advert-block-btn,
+.advert-block-btn:hover,
+.advert-block-btn:active{
   font-size: 32px;
   line-height: 44px;
 }
