@@ -28,10 +28,12 @@ a {
 .default-a:active{
   color: #ffbc9e;
 }
-.site-navigation, .nav-catalog{
+.site-navigation,
+.nav-catalog{
   list-style: none;
 }
-.footer-social-btns, .footer-links-list {
+.footer-social-btns,
+.footer-links-list {
   list-style: none;
 }
 .page-footer {
@@ -41,24 +43,29 @@ a {
 .for-suppliers {
   font-weight: 700;
 }
+/* разобраться с позиционированием!
 .for-suppliers::before{
-  content: url("../img/heart.svg");
-  height: 13px;
+  content: " ";
+  position: absolute;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
   width: 15px;
-}
+  height: 13px;
+}*/
 .map {
-  background: url("../img/map.jpg") no-repeat center center;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .adress-container{
   display: flex;
   justify-content: flex-end;
 }
 .adress{
-  background: #ffffff;
+  background-color: #ffffff;
   color: #333333;
-
 }
-
 .default-button {
   background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
@@ -152,7 +159,9 @@ a.header-button:active{
   font-size: 18px;
   line-height: 22px;
 }
-.bonus-item-btn, .bonus-item-btn:hover, .bonus-item-btn:active{
+.bonus-item-btn,
+.bonus-item-btn:hover,
+.bonus-item-btn:active{
   font-size: 18px;
   line-height: 24px;
 }
@@ -179,7 +188,9 @@ a.header-button:active{
   line-height: 22px;
   font-weight: 500;
 }
-.catalog-list-item-btn a, .catalog-list-item-btn a:hover, .catalog-list-item-btn a:focus{
+.catalog-list-item-btn a,
+.catalog-list-item-btn a:hover,
+.catalog-list-item-btn a:focus{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -242,7 +253,9 @@ a.header-button:active{
   line-height: 22px;
   font-weight: 400;
 }
-.news-form, .news-form:hover, .news-form:active{
+.news-form,
+.news-form:hover,
+.news-form:active{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -263,7 +276,9 @@ a.header-button:active{
   font-weight: 700;
   color: #333333;
 }
-.open-feedback, .open-feedback:hover, .open-feedback:active{
+.open-feedback,
+.open-feedback:hover,
+.open-feedback:active{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -439,7 +454,9 @@ color: #323232;
   color: #323232;
 }
 
-.feedback-button, .feedback-button:hover, .feedback-button:active{
+.feedback-button,
+.feedback-button:hover,
+.feedback-button:active{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
