@@ -4,8 +4,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
-  color: #ffffff;
   background-color: #849d8f;
 }
 .visually-hidden{
@@ -22,6 +20,7 @@ a {
   text-decoration: none;
 }
 .default-a{
+  font-weight: 700;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, .2);;
 }
@@ -111,6 +110,8 @@ a.header-button:active{
 }
 .header-options-btn{
     background-color: rgba(255, 255, 255, 0.2);
+    color:#ffffff;
+    font-weight:500;
   }
 
 .header-options-btn:hover{
@@ -121,6 +122,7 @@ a.header-button:active{
   background-image: url("../img/slider-1.png");
   background-repeat: no-repeat;
   background-position: center center;
+  color:#ffffff;
 }
 .advert-block-header{
   font-size: 60px;
@@ -129,6 +131,10 @@ a.header-button:active{
 .advert-block-btn, .advert-block-btn:hover, .advert-block-btn:active{
   font-size: 32px;
   line-height: 44px;
+}
+.bonus{
+  color:#ffffff;
+  font-weight:700;
 }
 .bonus-item:nth-child(2) {
   background-image: url("../img/raspberry-back.jpg");
@@ -158,10 +164,15 @@ a.header-button:active{
 .catalog-list-item-price-number{
   font-size: 45px;
   line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
+
 }
 .catalog-list-item-price-unit{
   font-size: 30px;
   line-height: 45px;
+  font-weight: 700;
+  color: #ffffff;
 }
 .catalog-list-item a{
   font-size: 16px;
@@ -172,6 +183,16 @@ a.header-button:active{
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+.footer-maker,
+.footer-maker a{
+  color:#ffffff;
+  font-weight:400;
+}
+.footer-links-item{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
 }
 .features{
   color: #333333;
@@ -251,16 +272,22 @@ a.header-button:active{
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  color:#ffffff;
 }
 .catalog-path{
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  color:#ffffff;
+}
+.catalog-path a{
+  font-weight:400;
 }
 .header-options-time{
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  color:#ffffff;
 }
 a.header-options-phone {
   font-size: 22px;
@@ -272,6 +299,11 @@ a.header-options-phone {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+  color:#ffffff;
+}
+
+.filter{
+  color:#ffffff;
 }
 .filter-label{
   font-size: 14px;
@@ -438,6 +470,8 @@ color: #323232;
 }
 .page-counter-item a{
   border: none;
+  color:#ffffff;
+  font-weight:500;
 }
 .page-counter-item.unable a{
   color: rgba(255, 255, 255, 0.2);
