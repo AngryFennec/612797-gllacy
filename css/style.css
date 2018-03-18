@@ -25,20 +25,17 @@ a {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, .2);;
 }
-.main-navigation{
+.default-a:hover,
+.default-a:active{
+  color: #ffbc9e;
 }
 .site-navigation, .nav-catalog{
   list-style: none;
 }
-
-footer a:hover, a:active{
-  color: #ffbc9e;
-}
 .footer-social-btns, .footer-links-list {
   list-style: none;
 }
-
-footer {
+.page-footer {
   font-size: 13px;
   font-weight: normal;
 }
@@ -269,7 +266,7 @@ a.header-options-phone {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
-  border: none;
+  color:#ffffff;
 }
 .catalog-header{
   font-size: 35px;
