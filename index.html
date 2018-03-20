@@ -9,10 +9,12 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
-      </a>
       <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <div class="container">
+        <a class="main-header-logo">
+          <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
+        </a>
         <ul class="site-navigation">
           <li><a class="header-button default-a" href="catalog.html">Каталог</a></li>
           <li>
@@ -27,7 +29,7 @@
           <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
           <li><a class="header-button default-a" href=#>О Компании</a></li>
         </ul>
-      </nav>
+
       <div class="header-options">
         <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
         <form class="search visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
@@ -68,36 +70,48 @@
           </form>
         </div>
       </div>
-      <div>
+    </div>
+      <div class="time-and-phone">
         <span class="header-options-time">С 10 до 20</span>
         <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
       </div>
+    </div>
+  </div>
+      </nav>
     </header>
     <main class="container">
+      <div class="header-container">
       <h1 class="visually-hidden">Магазин мороженого "Gllasy shop"</h1>
-      <section class="slides">
-        <ul class="slides-switches visually-hidden">
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Первый слайд
-            </button>
-          </li>
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Второй слайд
-            </button>
-          </li>
-          <li class="slide-radio">
-            <button class="slide-btn">
-              Третий слайд
-            </button>
-          </li>
-        </ul>
-      </section>
       <section class="advert-block">
+        <div class="advert-header">
         <b class="advert-block-header">Крем-брюле и пломбир с малиновым джемом</b>
+      </div>
+      <div class="slider-container">
+        <section class="slides">
+          <ul class="slides-switches visually-hidden">
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Первый слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Второй слайд
+              </button>
+            </li>
+            <li class="slide-radio">
+              <button class="slide-btn">
+                Третий слайд
+              </button>
+            </li>
+          </ul>
+        </section>
+        <div class="header-button">
         <a class="advert-block-btn default-button" href=#>Давайте оба!</a>
+      </div>
+    </div>
       </section>
+    </div>
       <div class="bonus">
         <h2 class="visually-hidden">Подарки покупателям</h2>
         <section class="bonus-item">
@@ -195,7 +209,7 @@
       </div>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <img src="img/map_icon" alt="Иконка мороженого на карте">
+        <img src="img/pin.svg" width="80" height="140" alt="Иконка мороженого на карте">
         <div class="adress-container">
           <section class="adress">
             <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -214,8 +228,8 @@
               <textarea class="default-input" placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
               <input type="submit" class="default-button feedback-button" value="Отправить" id="feedback-btn" tabindex="-1">
             </form>
-          </div>
         </section>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
