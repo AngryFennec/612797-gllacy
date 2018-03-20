@@ -1,8 +1,3 @@
-html, body {
-  min-width: 1220px;
-  min-height: 2417px;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -10,6 +5,19 @@ body {
   font-size: 16px;
   line-height: 18px;
   background-color: #849d8f;
+}
+/*фоны для сетки*/
+.body-index{
+  background-image: url("../img/gllacy-index-1200.jpg");
+  background-repeat:no-repeat;
+  background-size: 1200px auto;
+  background-position: center;
+}
+.body-catalog{
+  background-image: url("../img/gllacy-catalog-1200.jpg");
+  background-repeat:no-repeat;
+  background-size: 1200px auto;
+  background-position: top center;
 }
 .visually-hidden {
   position: absolute;
@@ -521,12 +529,11 @@ color: #323232;
 html,
 body {
   min-width: 1200px;
-  min-height: 2416px;
 }
 .main-header {
   margin: 0 auto;
-  min-height: 130px;
-  margin-bottom: 42px;
+  min-height: 115px;
+  /*margin-bottom: 42px;*/
   width: 1200px;
 }
 
@@ -534,9 +541,10 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
-  min-height: 130px;/*130*/
+  min-height: 115px;/*130*/
   display: flex;
     flex-direction: column;
+
 
 }
 .main-header-logo {
@@ -566,10 +574,9 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: 27px;
-  margin-top: 25px;
+
   padding: 0;
    /* Временно для сетки */
-  min-height: 40px;
     width: 167px;
 
 }
@@ -597,6 +604,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .slider-container {
@@ -704,6 +712,62 @@ body {
 .page-footer {
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+.phone-href-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 20px;
+}
+.catalog-path {
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 27px;
+  padding-top: 30px;
+}
+.cat-container {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 198px;
+  width: 1200px;
+  margin-top: -20px;/*!!*/
+}
+.filter-container {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 198px;
+  width: 1200px;
+}
+.filter {
+  margin: 0;
+  width: 879px;
+  min-height: 130px;
+}
+.catalog-header {
+  padding-left: 27px;
+}
+.filter-forms {
+  display: flex;
+}
+.catalog-list-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.page-counter {
+    margin-left: auto;
+  margin-right: 27px;
+  width: 190px;
+}
+.page-counters {
+  width: auto;
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }

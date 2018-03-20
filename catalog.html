@@ -7,12 +7,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-catalog">
     <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
-      </a>
       <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <div class="container">
+        <a class="main-header-logo">
+          <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
+        </a>
         <ul class="site-navigation">
           <li><a class="header-button default-a" href="catalog.html">Каталог</a></li>
           <li>
@@ -27,64 +29,38 @@
           <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
           <li><a class="header-button default-a" href=#>О Компании</a></li>
         </ul>
-      </nav>
+
       <div class="header-options">
         <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
-        <form class="search visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="search-input">Что ищем?</label>
-         <input class="default-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
-        </form>
-        <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
-        <form class="entry visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="entry-mail">Электронная почта</label>
-         <input class="default-input" type="email" placeholder="Электронная почта" id="entry-mail"  tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
-         <label class="visually-hidden" for="entry-pass">Пароль</label>
-         <input class="default-input" type="password" placeholder="Пароль" id="entry-pass"  tabindex="-1" required></input>
-         <input type="submit" class="default-button" value="Войти" id="entry-btn"  tabindex="-1">
-         <a href=#>Забыли пароль?</a>
-         <a href=#>Новая регистрация</a>
-        </form>
-        <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
-        <div class="basket-content">
-          <table>
-            <tr class="basket-item">
-              <td>x</td>
-              <td><img src=#></td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х <span class="basket-price">200 руб</span></td>
-              <td>300 руб</td>
-            </tr>
-            <tr class="basket-item">
-              <td>x</td>
-              <td><img src=#></td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х <span class="basket-price">300 руб</span></td>
-              <td>450 руб</td>
-            </tr>
-          </table>
-          <p class="total-price">Итого: 750 руб</p>
-          <form>
-            <input type="submit" class="default-button" id="basket-btn" value="Оформить заказ"></input>
-          </form>
+          <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
+           <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
+
         </div>
       </div>
-      <div>
+    </div>
+  <div class="phone-href-container">
+          <div class="catalog-path">
+        <a class="default-a" href="#">Главная</a>
+       >>
+        <a class="default-a" href="#">Каталог</a>
+        >>
+        <a class="default-a" href="#">Сливочное</a>
+     </div>
+      <div class="time-and-phone">
         <span class="header-options-time">С 10 до 20</span>
         <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
       </div>
-    </header>
-    <main class="container">
-    <div class="catalog-path">
-      <a class="default-a" href="#">Главная</a>
-      >>
-      <a class="default-a" href="#">Каталог</a>
-      >>
-      <a class="default-a" href="#">Сливочное</a>
+
     </div>
-    <h1 class="catalog-header">Сливочное мороженое</h1>
-    <section class="filter">
-      <h2 class="visually-hidden">Фильтры</h2>
-      <form method="post" action="https://echo.htmlacademy.ru">
+
+      </nav>
+    </header>
+  <main class="cat-container">
+    <div class="filter-container">
+     <h1 class="catalog-header">Сливочное мороженое</h1>
+     <section class="filter">
+       <h2 class="visually-hidden">Фильтры</h2>
+      <form method="post" action="https://echo.htmlacademy.ru" class="filter-forms">
         <fieldset class="sorting">
           <label class="filter-label" for="sorting-top">Сортировка:</label>
           <select class="sorting-options" size="1" id="sorting-top" >
@@ -124,9 +100,10 @@
         <input type="submit" class="filter-btn" id="filter-btn" value="Применить"></input>
       </form>
     </section>
-
-    <section class="catalog-list">
+    </div>
+<section class="catalog-list">
       <h2 class="visually-hidden">Каталог</h2>
+  <div class="catalog-list-container">
       <div class="catalog-list-item">
         <a class="default-a" href=#>
           <img src="img/ice1-1.jpg" width=267 height=267>
@@ -283,6 +260,7 @@
           <a class="default-button" href=#>Быстрый просмотр</a>
         </div>
       </div>
+  </div>
       <div class="page-counter">
         <ul class="page-counters">
           <li class="page-counter-item unable"><a href=#><</a></li>
@@ -295,7 +273,7 @@
         </ul>
       </div>
     </section>
-  </main>
+ </main>
   <footer class="page-footer">
     <section class="footer-social">
       <ul class="footer-social-btns">
@@ -318,4 +296,4 @@
     </div>
   </footer>
   </body>
-  </html>
+</html>
