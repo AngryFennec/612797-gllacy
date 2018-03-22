@@ -8,13 +8,13 @@ body {
 }
 /*фоны для сетки*/
 .body-index{
-  background-image: url("../img/gllacy-index-1200.jpg");
+/*  background-image: url("../img/gllacy-index-1200.jpg");*/
   background-repeat:no-repeat;
   background-size: 1200px auto;
   background-position: top center;
 }
 .body-catalog{
-  background-image: url("../img/gllacy-catalog-1200.jpg");
+ background-image: url("../img/gllacy-catalog-1200.jpg");
   background-repeat:no-repeat;
   background-size: 1200px auto;
   background-position: top center;
@@ -71,14 +71,22 @@ img {
   height: 13px;
 }*/
 .map {
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map-with-pin.png");
   background-repeat: no-repeat;
   background-position: center center;
+  width: auto;
+  position: relative;
 }
 
 .adress {
   background-color: #ffffff;
   color: #333333;
+  border-radius: 5px;
+   box-sizing: border-box;
+   position: absolute;
+   top: 90px;
+   left: 800px;
+   width: 283px;
 }
 .default-button {
   background-image: -moz-linear-gradient( 90deg, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
@@ -91,6 +99,18 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    border-radius: 50px;
+    border: none;
+    display: inline-block;
+  padding: 12px 44px;
+
+  cursor: pointer;
+  vertical-align: top;
+
+
+
 }
 .default-button:hover {
     background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -115,9 +135,19 @@ img {
     font-weight: 700;
 
 }
+
+a.header-button {
+  padding: 7px 8px 7px 8px;
+margin: 0px 3px 0px 0px;
+  border: 0;
+  border-radius: 25px;
+cursor: pointer;
+vertical-align: top;
+}
 a.header-button:hover {
   color: #333333;
   background-color: rgb(247, 246, 243);
+
 }
 a.header-button:active {
   color: #333333;
@@ -164,6 +194,7 @@ a.header-button:active {
 .bonus-item {
   width: 550px;
   height: 230px;
+  border-radius: 15px;
 }
 .bonus-item:nth-child(2) {
   background-image: url("../img/raspberry-back.jpg");
@@ -462,9 +493,29 @@ color: #323232;
   background-color: #f6b5a5;
   color: #323232;
 }
-.nav-catalog li.current { /*класс для "Находимся на странице" в выпадающем меню каталога*/
-  background-color: #d07058;
-  color: #323232;
+
+.site-navigation li {
+  position: relative;
+vertical-align: top;
+  margin-right: 2px;
+  display: inline-block;
+
+}
+.current-container a{ /*класс для "Находимся на странице" в выпадающем меню каталога*/
+background-color: #d07058;
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+    padding: 7px 12px 6px 14px;
+  margin: 0px 3px 0px 1px;
+    background-color: #d07058;
+    border: 0;
+    border-radius: 25px;
+  cursor: pointer;
+  vertical-align: top;
+
 }
 .header-button-current { /*класс для "Находимся на странице" в верхнем меню*/
   background-color: rgb(208, 112, 88);
@@ -529,6 +580,29 @@ color: #323232;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
 }
+.footer-social-btns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 193px;
+  justify-content: space-between;
+}
+
+.tweet {
+  box-sizing: border-box;
+background-image: url("../img/twitter.svg");
+background-size: 100%;
+background-repeat: no-repeat;
+font-size: 0;
+width: 37px;
+height: 37px;
+display: inline-block;
+border: 3px solid rgba(255,255,255,0.7);
+border-radius: 50%;
+opacity: 0.8;
+}
+
+}
+
 /*стили сетки*/
 html,
 body {
@@ -537,7 +611,6 @@ body {
 .main-header {
   margin: 0 auto;
   min-height: 115px;
-  /*margin-bottom: 42px;*/
   width: 1200px;
 }
 
@@ -560,7 +633,6 @@ body {
 
   /* Временно для сетки */
   min-height: 53px;
-  width: 349px;
 }
 
 .header-options {
@@ -575,12 +647,16 @@ body {
 .time-and-phone {
   margin: 0;
   margin-left: auto;
-  margin-right: 27px;
+  margin-right: 28px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
 
   padding: 0;
-   /* Временно для сетки */
-    width: 167px;
-
+  margin-top: -7px;
+}
+.header-options-time {
+  align-self: right;
 }
 .main-navigation-wrapper{
     width: 1200px;
@@ -620,6 +696,8 @@ body {
   margin:0 auto;
   width:282px;
   min-height: 65px;
+
+
 }
 .advert-header {
   margin:0 auto;
@@ -662,11 +740,15 @@ body {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-bottom: 37px;
 }
 .catalog-list-item {
   width: 267px;
+  margin-right: 26px;
+}
+.catalog-list-item:nth-child(4n) {
+  margin-right: 0;
 }
 .features {
   margin: 0 auto;
@@ -705,13 +787,13 @@ body {
 .adress-container {
   width: 1200px;
 }
-.adress {
+/*.adress {
   position:absolute;
   height: 308px;
   width: 295px;
   top:2050px;
   left:1000px;
-  }
+  }*/
 .page-footer {
   margin: 0 auto;
   width: 1200px;
@@ -783,12 +865,11 @@ padding-top: 9px;
   justify-content: flex-start;
 }
 .site-navigation {
-  padding-left: 10px;
+  padding-left: 9px;
   padding-top: 28px;
   display: flex;
   justify-content: space-around;
-  width: 370px;
-  background-color: :blue;
+  width: 400px;
 }
 .header-options {
   display: flex;
