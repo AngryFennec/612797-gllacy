@@ -11,7 +11,7 @@ body {
   background-image: url("../img/gllacy-index-1200.jpg");
   background-repeat:no-repeat;
   background-size: 1200px auto;
-  background-position: center;
+  background-position: top center;
 }
 .body-catalog{
   background-image: url("../img/gllacy-catalog-1200.jpg");
@@ -31,6 +31,10 @@ body {
 }
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .default-a {
   font-weight: 700;
@@ -544,8 +548,6 @@ body {
   min-height: 115px;/*130*/
   display: flex;
     flex-direction: column;
-
-
 }
 .main-header-logo {
   width: 154px;
@@ -672,6 +674,7 @@ body {
   min-height: 310px;
   width: 1200px;
   margin-bottom: 40px;
+  background-size: cover;
 }
 
 .news {
@@ -703,12 +706,12 @@ body {
   width: 1200px;
 }
 .adress {
-  margin: 0;
-  min-height: 308px;
+  position:absolute;
+  height: 308px;
   width: 295px;
-  margin-left: auto;
-  margin-right: 27px;
-}
+  top:2050px;
+  left:1000px;
+  }
 .page-footer {
   margin: 0 auto;
   width: 1200px;
@@ -727,7 +730,7 @@ body {
   margin-left: 0;
   margin-right: auto;
   padding-left: 27px;
-  padding-top: 30px;
+  padding-top: 19px;
 }
 .cat-container {
   margin: 0 auto;
@@ -770,4 +773,23 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-around;
+}
+.main-header-logo {
+padding-top: 9px;
+}
+.main-nav-flex-left {
+  display: flex;
+  width: 560px;
+  justify-content: flex-start;
+}
+.site-navigation {
+  padding-left: 10px;
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-around;
+  width: 370px;
+  background-color: :blue;
+}
+.header-options {
+  display: flex;
 }
