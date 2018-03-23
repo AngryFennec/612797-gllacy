@@ -1,107 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="body-index">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <div class="main-nav-flex-left">
-            <a class="main-header-logo" href="index.html">
-              <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
-            </a>
-            <ul class="site-navigation">
-              <li><a class="header-button default-a" href="catalog.html">Каталог</a></li>
-              <li>
-                <ul class="nav-catalog visually-hidden">
-                  <li class="nav-catalog-top">Новинки</li>
-                  <li>Сливочное</li>
-                  <li>Щербеты</li>
-                  <li>Фруктовый лед</li>
-                  <li>Мелорин</li>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="body-index">
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
+    <div class="slides-container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <div class="main-navigation-wrapper">
+            <div class="container">
+              <div class="main-nav-flex-left">
+                <a class="main-header-logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop"></a>
+                <ul class="site-navigation">
+                  <li><a class="header-button default-a" href="catalog.html">Каталог</a></li>
+                  <li>
+                    <ul class="nav-catalog visually-hidden">
+                      <li class="nav-catalog-top">Новинки</li>
+                      <li>Сливочное</li>
+                      <li>Щербеты</li>
+                      <li>Фруктовый лед</li>
+                      <li>Мелорин</li>
+                    </ul>
+                  </li>
+                  <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
+                  <li><a class="header-button default-a" href=#>О Компании</a></li>
                 </ul>
-              </li>
-              <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
-              <li><a class="header-button default-a" href=#>О Компании</a></li>
-            </ul>
+              </div>
+              <div class="header-options">
+                <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
+                <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
+                <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
+                <div class="basket-content visually-hidden">
+                  <table>
+                    <tr class="basket-item">
+                      <td>x</td>
+                      <td><img src=#></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1,5 кг х <span class="basket-price">200 руб</span></td>
+                      <td>300 руб</td>
+                    </tr>
+                    <tr class="basket-item">
+                      <td>x</td>
+                      <td><img src=#></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td>1,5 кг х <span class="basket-price">300 руб</span></td>
+                      <td>450 руб</td>
+                    </tr>
+                  </table>
+                  <p class="total-price">Итого: 750 руб</p>
+                  <form>
+                    <input type="submit" class="default-button" id="basket-btn" value="Оформить заказ"></input>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="phone-href-container">
+              <div class="time-and-phone">
+                <span class="header-options-time">С 10 до 20, ежедневно</span>
+                <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
+              </div>
+            </div>
           </div>
-            <div class="header-options">
-              <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
-              <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
-              <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
-        <div class="basket-content visually-hidden">
-          <table>
-            <tr class="basket-item">
-              <td>x</td>
-              <td><img src=#></td>
-              <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х <span class="basket-price">200 руб</span></td>
-              <td>300 руб</td>
-            </tr>
-            <tr class="basket-item">
-              <td>x</td>
-              <td><img src=#></td>
-              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х <span class="basket-price">300 руб</span></td>
-              <td>450 руб</td>
-            </tr>
-          </table>
-          <p class="total-price">Итого: 750 руб</p>
-          <form>
-            <input type="submit" class="default-button" id="basket-btn" value="Оформить заказ"></input>
-          </form>
+        </nav>
+      </header>
+      <section class="slider">
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
         </div>
-      </div>
-    </div>
-             <div class="phone-href-container">
-
-      <div class="time-and-phone">
-        <span class="header-options-time">С 10 до 20, ежедневно</span>
-        <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
-      </div>
-
-    </div>
-      </nav>
-    </header>
-    <main class="container">
-      <div class="header-container">
-      <h1 class="visually-hidden">Магазин мороженого "Gllasy shop"</h1>
-      <section class="advert-block">
-        <div class="advert-header">
-        <b class="advert-block-header">Крем-брюле и пломбир с малиновым джемом</b>
-      </div>
-      <div class="slider-container">
-        <section class="slides">
-          <ul class="slides-switches visually-hidden">
-            <li class="slide-radio">
-              <button class="slide-btn">
-                Первый слайд
-              </button>
-            </li>
-            <li class="slide-radio">
-              <button class="slide-btn">
-                Второй слайд
-              </button>
-            </li>
-            <li class="slide-radio">
-              <button class="slide-btn">
-                Третий слайд
-              </button>
-            </li>
-          </ul>
-        </section>
-        <div class="header-button">
-        <a class="advert-block-btn default-button" href=#>Давайте оба!</a>
-      </div>
-    </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">
+                      Крем-брюле и пломбир с малиновым джемом
+                    </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">
+                      Шоколадный пломбир и лимонный сорбет
+                    </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">
+                      Пломбир с помадкой и клубничный щербет
+                    </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
       </section>
-    </div>
+      </div>
+    <main class="container">
       <div class="bonus">
         <h2 class="visually-hidden">Подарки покупателям</h2>
         <section class="bonus-item">
@@ -123,52 +123,52 @@
             Сливочное с апельсиновым джемом и цитрусовой стружкой
           </a>
           <div class="catalog-list-item-price">
-           <span class="catalog-list-item-price-number">310 Р</span>
+            <span class="catalog-list-item-price-number">310 Р</span>
             <span class="catalog-list-item-price-unit">/кг</span>
           </div>
           <div class="catalog-list-item-btn">
-           <a class="default-button" href=#>Быстрый просмотр</a>
-         </div>
-       </div>
-       <div class="catalog-list-item">
-         <a class="default-a" href=#>
+            <a class="default-button" href=#>Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="catalog-list-item">
+          <a class="default-a" href=#>
            <img src="img/ice1-2.png" width=267 height=267>
            Сливочно-кофейное с кусочками шоколада
          </a>
-         <div class="catalog-list-item-price">
-           <span class="catalog-list-item-price-number">380 Р</span>
-           <span class="catalog-list-item-price-unit">/кг</span>
-         </div>
-         <div class="catalog-list-item-btn">
-           <a class="default-button" href=#>Быстрый просмотр</a>
-         </div>
-       </div>
-       <div class="catalog-list-item">
-         <a class="default-a" href=#>
+          <div class="catalog-list-item-price">
+            <span class="catalog-list-item-price-number">380 Р</span>
+            <span class="catalog-list-item-price-unit">/кг</span>
+          </div>
+          <div class="catalog-list-item-btn">
+            <a class="default-button" href=#>Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="catalog-list-item">
+          <a class="default-a" href=#>
            <img src="img/ice1-3.png" width=267 height=267>
            Сливочно-клубничное с присыпкой из белого шоколада
          </a>
-         <div class="catalog-list-item-price">
-           <span class="catalog-list-item-price-number">355 Р</span>
-           <span class="catalog-list-item-price-unit">/кг</span>
-         </div>
-         <div class="catalog-list-item-btn">
-           <a class="default-button" href=#>Быстрый просмотр</a>
-         </div>
-       </div>
-       <div class="catalog-list-item">
-         <a class="default-a" href=#>
+          <div class="catalog-list-item-price">
+            <span class="catalog-list-item-price-number">355 Р</span>
+            <span class="catalog-list-item-price-unit">/кг</span>
+          </div>
+          <div class="catalog-list-item-btn">
+            <a class="default-button" href=#>Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="catalog-list-item">
+          <a class="default-a" href=#>
            <img src="img/ice1-4.png" width=267 height=267>
            Сливочное крем-брюле с карамельной подливкой
          </a>
-         <div class="catalog-list-item-price">
-           <span class="catalog-list-item-price-number">415 Р</span>
-           <span class="catalog-list-item-price-unit">/кг</span>
-         </div>
-         <div class="catalog-list-item-btn">
-           <a class="default-button" href=#>Быстрый просмотр</a>
-         </div>
-       </div>
+          <div class="catalog-list-item-price">
+            <span class="catalog-list-item-price-number">415 Р</span>
+            <span class="catalog-list-item-price-unit">/кг</span>
+          </div>
+          <div class="catalog-list-item-btn">
+            <a class="default-button" href=#>Быстрый просмотр</a>
+          </div>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -190,13 +190,13 @@
         </article>
         <section class="news-distrib">
           <div class="news-distrib-inner">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form  method="post" action="https://echo.htmlacademy.ru">
-            <label class="visually-hidden" for="news-mail">Электронная почта</label>
-            <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
-            <input type="submit" class="default-button news-form" value="Отправить" id="news-btn" ></input>
-          </form>
-        </div>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="news-mail">Электронная почта</label>
+              <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
+              <input type="submit" class="default-button news-form" value="Отправить" id="news-btn"></input>
+            </form>
+          </div>
         </section>
       </div>
       <section class="map">
@@ -209,7 +209,7 @@
             <span class="map-phone"><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
             <p>(с 10 до 20 ежедневно)</p>
             <a class="default-button open-feedback" href=#>Форма обратной связи</a>
-            <form class="feedback visually-hidden"  method="post" action="https://echo.htmlacademy.ru">
+            <form class="feedback visually-hidden" method="post" action="https://echo.htmlacademy.ru">
               <b>Мы обязательно вам ответим!</b>
               <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
               <input class="default-input" type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
@@ -219,7 +219,7 @@
               <textarea class="default-input" placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
               <input type="submit" class="default-button feedback-button" value="Отправить" id="feedback-btn" tabindex="-1">
             </form>
-        </section>
+          </section>
         </div>
       </section>
     </main>
@@ -227,7 +227,7 @@
       <section class="footer-social">
         <ul class="footer-social-btns">
           <li><a class="social-btn tweet" href=#><span class="visually-hidden">Twitter</span>
-            
+
             </a></li>
           <li><a class="social-btn" href=#><span class="visually-hidden">Instagram</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g fill="#FFF"><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
@@ -252,5 +252,7 @@
         <p>Сделано в <a class="default-a" href="htmlacademy.ru">HTML Academy</a>©2017</p>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
