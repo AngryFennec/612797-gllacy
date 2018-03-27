@@ -200,11 +200,13 @@
         <section class="news-distrib">
           <div class="news-distrib-inner">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="news-inner-form"
             <form method="post" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="news-mail">Электронная почта</label>
               <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
               <input type="submit" class="default-button news-form" value="Отправить" id="news-btn"></input>
             </form>
+      </div>
           </div>
         </section>
       </div>
@@ -212,11 +214,11 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="adress-container">
           <section class="adress">
-            <p>Адрес главного офиса и офлайн-магазина:</p>
+            <p class="map-adress-pre">Адрес главного офиса и офлайн-магазина:</p>
             <p class="map-adress-text">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <p>Для заказов по телефону:</p>
+            <p class="map-adress-order">Для заказов по телефону:</p>
             <span class="map-phone"><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
-            <p>(с 10 до 20 ежедневно)</p>
+            <p class="map-adress-time">(с 10 до 20 ежедневно)</p>
             <a class="default-button open-feedback" href=#>Форма обратной связи</a>
             <form class="feedback visually-hidden" method="post" action="https://echo.htmlacademy.ru">
               <b>Мы обязательно вам ответим!</b>
@@ -249,10 +251,14 @@
       </section>
       <div class="footer-links">
         <ul class=footer-links-list>
-          <li><a class="for-suppliers default-a" href=#>Для поставщиков</a></li>
+          <div class="footer-links-left">
+          <li><a class="for-suppliers default-a footer-links-item" href=#>Для поставщиков</a></li>
           <li><a class="default-a footer-links-item" href=#>О производстве</a></li>
+          </div>
+          <div class="footer-links-right">
           <li><a class="default-a footer-links-item" href=#>Наши документы</a></li>
           <li><a class="default-a footer-links-item" href=#>Экологические стандарты</a></li>
+          </div>
         </ul>
       </div>
       <div class="footer-maker">
