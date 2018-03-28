@@ -8,54 +8,73 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body-catalog">
-    <div class="cat-wrapper"
+    <div class="cat-wrapper">
+    <div class="slides-container">
+
     <header class="main-header">
-      <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <div class="main-nav-flex-left">
-            <a class="main-header-logo" href="index.html">
-              <img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop">
-            </a>
-            <ul class="site-navigation">
-              <li class="current"><div class="current-container"><a class="header-button default-a" href="catalog.html">Каталог</a></div></li>
-              <li>
-                <ul class="nav-catalog visually-hidden">
-                  <li class="nav-catalog-top">Новинки</li>
-                  <li>Сливочное</li>
-                  <li>Щербеты</li>
-                  <li>Фруктовый лед</li>
-                  <li>Мелорин</li>
+        <nav class="main-navigation">
+          <div class="main-navigation-wrapper">
+            <div class="container">
+              <div class="main-nav-flex-left">
+                <a class="main-header-logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop"></a>
+                <ul class="site-navigation">
+                  <li><a class="header-button default-a site-navigation-cat" href="catalog.html">Каталог</a>
+                    <ul class="nav-catalog">
+                      <li class="nav-catalog-sub nav-catalog-top">Новинки</li>
+                      <li class="nav-catalog-sub">Сливочное</li>
+                      <li class="nav-catalog-sub">Щербеты</li>
+                      <li class="nav-catalog-sub">Фруктовый лед</li>
+                      <li class="nav-catalog-sub">Мелорин</li>
+                    </ul>
+                  </li>
+                  <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
+                  <li><a class="header-button default-a" href=#>О Компании</a></li>
                 </ul>
-              </li>
-              <li><a class="header-button default-a" href=#>Доставка и оплата</a></li>
-              <li><a class="header-button default-a" href=#>О Компании</a></li>
-            </ul>
-          </div>
-            <div class="header-options">
-              <a class="header-options-btn" href=#><span class="visually-hidden">Поиск</span><img src="img/search.svg" width="" height=""></a>
-              <a class="header-options-btn" href=#><span class="header-options-text">Вход</span></a>
-              <a class="header-options-btn" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
+              </div>
+              <div class="header-options">
+              <div class="search-container">
+                <a class="header-options-btn header-options-search" href=#><span class="visually-hidden">Поиск</span></a>
+              </div>
+                <div class="enter-container">
+                  <a class="header-options-btn header-options-enter" href=#>Вход</a>
+                </div>
+                <div class="basket-container">
+                <a class="header-options-btn header-options-basket"  href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
+</div>
+                <div class="basket-content visually-hidden">
+                  <table>
+                    <tr class="basket-item">
+                      <td>x</td>
+                      <td><img src=#></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1,5 кг х <span class="basket-price">200 руб</span></td>
+                      <td>300 руб</td>
+                    </tr>
+                    <tr class="basket-item">
+                      <td>x</td>
+                      <td><img src=#></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td>1,5 кг х <span class="basket-price">300 руб</span></td>
+                      <td>450 руб</td>
+                    </tr>
+                  </table>
+                  <p class="total-price">Итого: 750 руб</p>
+                  <form>
+                    <input type="submit" class="default-button" id="basket-btn" value="Оформить заказ"></input>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="phone-href-container">
+              <div class="time-and-phone">
+                <span class="header-options-time">С 10 до 20, ежедневно</span>
+                <a class="header-options-phone" href="tel:+78124502525">8 812 450-25-25</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="phone-href-container">
-          <div class="catalog-path">
-        <a class="default-a" href="#">Главная</a>
-       >>
-        <a class="default-a" href="#">Каталог</a>
-        >>
-        <a class="default-a" href="#">Сливочное</a>
-     </div>
-      <div class="time-and-phone">
-        <span class="header-options-time">С 10 до 20, ежедневно</span>
-        <a class="header-options-phone" href="tel:+78124502525">8 812 450 25 25</a>
-      </div>
-
+        </nav>
+      </header>
     </div>
-
-      </nav>
-    </header>
   <main class="cat-container">
     <div class="filter-container">
      <h1 class="catalog-header">Сливочное мороженое</h1>
