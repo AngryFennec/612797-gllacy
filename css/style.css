@@ -10,7 +10,6 @@ body {
 /*фоны для сетки*/
 
 .body-index {
-  background-image: url("../img/gllacy-index-1200.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1200px auto;
@@ -18,7 +17,7 @@ body {
 
 .body-catalog {
   background-color: #849d8f;
-/*  background-image: url("../img/gllacy-catalog-1200.jpg");*/
+  background-image: url("../img/gllacy-catalog-1200.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1200px auto;
@@ -462,10 +461,6 @@ a.header-button:active {
   line-height: 18px;
 }
 
-.popular {
-  display: flex;
-  justify-content: space-around;
-}
 
 .features {
 
@@ -1190,16 +1185,31 @@ body {
   margin-bottom: 37px;
   padding: 0;
 }
+.cat-row {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200px;
+  min-height: 366px;
+  margin: 0 auto;
 
+  padding: 0;
+}
 .catalog-list-item {
   width: 267px;
   margin-right: 26px;
 }
 
-.catalog-list-item:nth-child(5n) {
+.catalog-list-item:nth-child(1+4n) {
   margin-right: 0;
 }
 
+
+.catalog-list  {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+  padding: 0;
+}
 .news {
   display: flex;
   justify-content: flex-start;
@@ -1352,15 +1362,17 @@ body {
 .catalog-list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
 }
 
 .page-counter {
-  width: 190px;
+  width: 200px;
   margin-right: 27px;
   margin-left: auto;
+  margin-top: 55px;
 }
 
 .page-counters {
@@ -1483,8 +1495,8 @@ body {
 
 .catalog-list-item {
   position: relative;
-
   text-align: center;
+
 }
 
 .catalog-list-item:before {
@@ -1515,25 +1527,26 @@ body {
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.catalog-list-item:hover {
-  z-index: 5;
 
+.catalog-list-item:hover, .in-catalog:hover {
+  z-index: 50;
   margin-bottom: -35px;
 
 /*!!!*/
   padding-bottom: 75px;
 }
 
-.catalog-list-item .cat-item-btn {
+.catalog-list-item .cat-item-btn,
+.in-catalog .cat-item-btn {
   display: none;
   padding: 12px 30px;
 }
 
-.catalog-list-item:hover .cat-item-btn {
+.catalog-list-item:hover .cat-item-btn,
+.in-catalog:hover .cat-item-btn  {
   position: absolute;
   bottom: 15px;
   left: 19px;
-
   display: block;
   width: 170px;
 }
