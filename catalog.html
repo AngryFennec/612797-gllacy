@@ -66,11 +66,20 @@
               </div>
             </div>
             <div class="phone-href-container">
+              <div class="phone-href-container">
+         <div class="catalog-path">
+       <a class="default-a" href="#">Главная</a>
+       >>
+        <a class="default-a" href="#">Каталог</a>
+        >>
+        <a class="default-a" href="#">Сливочное</a>
+     </div>
               <div class="time-and-phone">
                 <span class="header-options-time">С 10 до 20, ежедневно</span>
                 <a class="header-options-phone" href="tel:+78124502525">8 812 450-25-25</a>
               </div>
             </div>
+          </div>
           </div>
         </nav>
       </header>
@@ -81,6 +90,7 @@
      <section class="filter">
        <h2 class="visually-hidden">Фильтры</h2>
       <form method="post" action="https://echo.htmlacademy.ru" class="filter-forms">
+        <div class="filter-row">
         <fieldset class="sorting">
           <label class="filter-label" for="sorting-top">Сортировка:</label>
           <select class="sorting-options" size="1" id="sorting-top" >
@@ -104,6 +114,8 @@
           <label  for="fat-max">выше 30%</label>
           <input type="radio" name="fat-value" id="fat-max"></input>
         </fieldset>
+      </div>
+      <div class="filter-row">
         <fieldset class="filler">
           <p class="filter-label">Наполнители:</p>
           <label for="filler-choko">шоколадные</label>
@@ -118,6 +130,7 @@
           <input type="checkbox" name="filler-value" id="filler-jam"></input>
         </fieldset>
         <input type="submit" class="filter-btn" id="filter-btn" value="Применить"></input>
+      </div>
       </form>
     </section>
     </div>

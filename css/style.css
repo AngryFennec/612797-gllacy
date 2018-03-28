@@ -17,7 +17,7 @@ body {
 
 .body-catalog {
   background-color: #849d8f;
-  background-image: url("../img/gllacy-catalog-1200.jpg");
+  /*background-image: url("../img/gllacy-catalog-1200.jpg");*/
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1200px auto;
@@ -1357,8 +1357,12 @@ body {
 
 .filter-forms {
   display: flex;
+  flex-direction: column;
 }
+.filter-row {
+  display: flex;
 
+}
 .catalog-list-container {
   display: flex;
   flex-wrap: wrap;
@@ -1436,7 +1440,9 @@ body {
 .slides-container {
   margin-bottom: 40px;
 }
-
+.cat-wrapper .slides-container {
+  margin-bottom: 10px;
+}
 .feature-list {
   position: relative;
 
