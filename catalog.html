@@ -136,16 +136,21 @@
           <p class="filter-label">Наполнители:</p>
         </div>
                 <div class="value-row">
-          <label for="filler-choko">шоколадные</label>
-          <input type="checkbox" name="filler-value" id="filler-choko"></input>
-          <label  for="filler-sugar">сахарные присыпки</label>
-          <input type="checkbox" name="filler-value" id="filler-sugar"></input>
-          <label  for="filler-fruit">фрукты</label>
-          <input type="checkbox" name="filler-value" id="filler-fruit"></input>
-          <label  for="filler-syrop">сиропы</label>
-          <input type="checkbox" name="filler-value" id="filler-syrop"></input>
-          <label  for="filler-jam">джемы</label>
-          <input type="checkbox" name="filler-value" id="filler-jam"></input>
+
+          <input class="filler-input" type="checkbox" name="filler-value" id="filler-choko" checked></input>
+          <label class="filler-label first-label" for="filler-choko">шоколадные</label>
+
+          <input class="filler-input" type="checkbox" name="filler-value" id="filler-sugar" checked></input>
+          <label class="filler-label" for="filler-sugar">сахарные присыпки</label>
+
+          <input class="filler-input" type="checkbox" name="filler-value" id="filler-fruit"></input>
+          <label class="filler-label" for="filler-fruit">фрукты</label>
+
+          <input class="filler-input" type="checkbox" name="filler-value" id="filler-syrop"></input>
+          <label class="filler-label" for="filler-syrop">сиропы</label>
+
+          <input class="filler-input" type="checkbox" name="filler-value" id="filler-jam"></input>
+          <label class="filler-label last-label" for="filler-jam">джемы</label>
         </div>
         </fieldset>
         <input type="submit" class="filter-btn" id="filter-btn" value="Применить"></input>

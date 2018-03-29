@@ -722,11 +722,10 @@ a.header-options-phone {
   line-height: 16px;
 }
 
-.sorting select {
-  background-color: #849d8f;
-}
+
 
 .sorting option {
+    background-color: rgba(255, 255, 255, 0.2);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -745,36 +744,7 @@ a.header-options-phone {
   line-height: 18px;
 }
 
-.filter-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
 
-  background-color: rgba(255, 255, 255, 0.2);
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-}
-
-.filter-btn:hover {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #323232;
-
-  background-color: rgb(255, 255, 255);
-}
-
-.filter-btn:active {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: #323232;
-
-  background-color: rgb(237, 237, 237);
-  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
-}
 
 .default-input {
   background-color: rgb(255, 255, 255);
@@ -909,7 +879,7 @@ a.header-options-phone {
   line-height: 24px;
   color: #ffffff;
 }
-
+/*фильтры*/
 .filter-row fieldset {
   border: none;
 }
@@ -919,7 +889,18 @@ a.header-options-phone {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  width: 195px;
+    height: 37px;
+    padding: 0 15px;
   background-color: rgba(255, 255, 255, 0.2);
+    background-image: url("../img/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 166px center;
+    background-size: 12px 12px;
+    border: none;
+    border-radius: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
 }
 .sorting {
   display: flex;
@@ -934,27 +915,13 @@ padding-top: 3px;
 
 .sorting-options option {
   color: #ffffff;
-
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sorting-options:hover option {
   font-weight: 700;
   color: #333333;
-
   background-color: rgba(255, 255, 255, 0.2);
-}
-.sorting-options {
-width: 195px;
-  height: 37px;
-  padding: 0 15px;
-
-  background-image: url("../img/select-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: 166px center;
-  background-size: 12px 12px;
-  border: none;
-  border-radius: 40px;
 }
 .sorting-options:hover {
   font-weight: 700;
@@ -965,7 +932,8 @@ width: 195px;
 }
 .filter-label {
   display: block;
-  padding-left: 7px;
+  padding-left: 5px;
+  margin-bottom: 3px;
 
 }
 .price {
@@ -1043,16 +1011,19 @@ border-radius: 40px;
   justify-content: flex-start;
 padding:0;
 margin: 0;
+
 }
-.label-row {
+.fat .label-row {
+
+  display: block;
   margin: 0;
   padding: 0;
-  margin-top: -12px;
+margin-top: -10px;
   margin-left: -2px;
 }
-.value-row {
+.fat .value-row {
   margin:0;
-  margin-top: -8px;
+
   margin-left: -12px;
   min-height: 27px;
   padding: 0px 15px;
@@ -1099,31 +1070,31 @@ background-size: 22px 22px;
   background-image: url("../img/radio-on.svg");
 }
 
-
-
 .filler {
-  width: 500px;
+  width: 690px;
   height: 66px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 padding:0;
 margin: 0;
+margin-left:40px;
 }
-.label-row {
+.filler .label-row {
   margin: 0;
   padding: 0;
-  margin-top: -12px;
-  margin-left: -2px;
+  margin-top: -8px;
+
 }
 .filler .value-row {
   margin:0;
-  margin-top: -8px;
-  margin-left: -12px;
+margin-left: -10px;
+margin-top: 7px;
   min-height: 27px;
   padding: 0px 15px;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 2px;
+
   position: relative;
     background: rgba(255, 255, 255, 0.2);
   border: none;
@@ -1131,14 +1102,14 @@ margin: 0;
   display: flex;
   justify-content: flex-start;
 }
-.fat-label {
+.filler-label {
   display: inline-block;
   position: relative;
   white-space: nowrap;
   margin-top: 5px;
-  margin-right: 50px;
+  margin-right: 54px;
 }
-.fat-input {
+.filler-input {
   display: none;
 }
 .first-label {
@@ -1147,7 +1118,7 @@ margin: 0;
 .last-label {
   margin-right: 0px;
 }
-.fat-input+.fat-label::before {
+.filler-input+.filler-label::before {
   content: "";
 display: inline-block;
 position: absolute;
@@ -1155,15 +1126,57 @@ width: 22px;
 height: 22px;
 top: -4px;
 left: -30px;
-background-image: url("../img/radio-off.svg");
+background-image: url("../img/checkbox-off.svg");
 background-repeat: no-repeat;
 background-position: left center;
 background-size: 22px 22px;
 }
 
-.fat-input:checked+.fat-label::before {
-  background-image: url("../img/radio-on.svg");
+.filler-input:checked+.filler-label::before {
+  background-image: url("../img/checkbox-on.svg");
 }
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+height: 37px;
+width: 142px;
+align-self: center;
+margin-right: 0;
+margin-left: 20px;
+margin-top: 27px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
+.filter-btn:hover {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.filter-btn:active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0 2px 1px 0 rgba(105, 105, 105, 0.004);
+}
+
+.filter-row {
+  width: 880px;
+}
+/*конец фильтров*/
 .page-counter ul {
   list-style: none;
 }
