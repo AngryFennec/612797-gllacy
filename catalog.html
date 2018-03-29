@@ -18,7 +18,7 @@
               <div class="main-nav-flex-left">
                 <a class="main-header-logo" href="index.html"><img src="img/logo-gllacy.svg" alt="Логотип Gllasy Shop"></a>
                 <ul class="site-navigation">
-                  <li><a class="header-button default-a site-navigation-cat" href="catalog.html">Каталог</a>
+                  <li><div class="current-container"><a class="header-button default-a site-navigation-cat" href="catalog.html">Каталог</a></div>
                     <ul class="nav-catalog">
                       <li class="nav-catalog-sub nav-catalog-top">Новинки</li>
                       <li class="nav-catalog-sub">Сливочное</li>
@@ -101,23 +101,41 @@
           </select>
         </fieldset>
         <fieldset class="price">
-          <p class="filter-label">Цена: <span class="price-value">100 руб. - 500 руб.</span></p>
+          <legend class="price-value">Цена: 100 руб. - 500 руб.</legend>
+          <div class="range">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
         </fieldset>
         <fieldset class="fat">
+          <div class="label-row">
           <p  class="filter-label">Жирность</p>
-          <label for="fat-0">0%</label>
-          <input type="radio" name="fat-value" id="fat-0"></input>
-          <label  for="fat-10">до 10%</label>
-          <input type="radio" name="fat-value" id="fat-10" checked></input>
-          <label  for="fat-30">до 30%</label>
-          <input type="radio" name="fat-value" id="fat-30"></input>
-          <label  for="fat-max">выше 30%</label>
-          <input type="radio" name="fat-value" id="fat-max"></input>
+        </div>
+        <div class="value-row">
+
+          <input class="fat-input" type="radio" name="fat-value" id="fat-0"></input>
+                    <label class="fat-label first-label" for="fat-0">0%</label>
+
+          <input class="fat-input" type="radio" name="fat-value" id="fat-10" checked></input>
+                    <label class="fat-label"  for="fat-10">до 10%</label>
+
+          <input class="fat-input" type="radio" name="fat-value" id="fat-30"></input>
+          <label class="fat-label"  for="fat-30">до 30%</label>
+
+          <input class="fat-input" type="radio" name="fat-value" id="fat-max"></input>
+          <label class="fat-label last-label"  for="fat-max">выше 30%</label>
+        </div>
         </fieldset>
       </div>
       <div class="filter-row">
         <fieldset class="filler">
+                    <div class="label-row">
           <p class="filter-label">Наполнители:</p>
+        </div>
+                <div class="value-row">
           <label for="filler-choko">шоколадные</label>
           <input type="checkbox" name="filler-value" id="filler-choko"></input>
           <label  for="filler-sugar">сахарные присыпки</label>
@@ -128,6 +146,7 @@
           <input type="checkbox" name="filler-value" id="filler-syrop"></input>
           <label  for="filler-jam">джемы</label>
           <input type="checkbox" name="filler-value" id="filler-jam"></input>
+        </div>
         </fieldset>
         <input type="submit" class="filter-btn" id="filter-btn" value="Применить"></input>
       </div>
