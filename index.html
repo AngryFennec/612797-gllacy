@@ -38,19 +38,34 @@
                 </ul>
               </div>
               <div class="header-options">
-              <div class="search-container">
-                <a class="header-options-btn header-options-search" href=#><span class="visually-hidden">Поиск</span></a>
-                  <form class="search-form"  method="post" action="https://echo.htmlacademy.ru">
-                     <label class="visually-hidden" for="search-input">Что ищем?</label>
-                      <input class="default-input search-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
-                </form>
-              </div>
+                <div class="search-container">
+                  <a class="header-options-btn header-options-search" href=#><span class="visually-hidden">Поиск</span></a>
+                  <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+                    <label class="visually-hidden" for="search-input">Что ищем?</label>
+                    <input class="default-input search-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
+                  </form>
+                </div>
                 <div class="enter-container">
                   <a class="header-options-btn header-options-enter" href=#>Вход</a>
+                  <form class="entry" method="post" action="https://echo.htmlacademy.ru">
+                    <label class="visually-hidden" for="entry-mail">Электронная почта</label>
+                    <input class="default-input entry-email" type="email" placeholder="Электронная почта" id="entry-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+                    <label class="visually-hidden" for="entry-pass">Пароль</label>
+                    <input class="default-input entry-password" type="password" placeholder="Пароль" id="entry-pass" tabindex="-1" required></input>
+                    <div class="entry-actions">
+                      <div class="button-container">
+                      <input type="submit" class="default-button entry-button" value="Войти" id="entry-btn" tabindex="-1">
+                    </div>
+                      <div class="entry-links">
+                        <a class="entry-link" href=#>Забыли пароль?</a>
+                        <a class="entry-link" href=#>Новая регистрация</a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
                 <div class="basket-container">
-                <a class="header-options-btn header-options-basket"  href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
-</div>
+                  <a class="header-options-btn header-options-basket" href=#><span class="visually-hidden">Корзина</span><span class="header-options-text">Пусто</span></a>
+                </div>
                 <div class="basket-content visually-hidden">
                   <table>
                     <tr class="basket-item">
@@ -111,7 +126,7 @@
           </li>
         </ul>
       </section>
-      </div>
+    </div>
 
     <main class="main-container">
       <div class="bonus">
@@ -186,19 +201,19 @@
       </section>
       <section class="features">
         <div class="features-container">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-        <ul class="feature-list">
-          <div class="left-features">
-          <li class="feature-item icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="feature-item eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+          <ul class="feature-list">
+            <div class="left-features">
+              <li class="feature-item icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="feature-item eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            </div>
+            <div class="right-features">
+              <li class="feature-item cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="feature-item thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            </div>
+          </ul>
         </div>
-        <div class="right-features">
-          <li class="feature-item cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="feature-item thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-        </div>
-        </ul>
-      </div>
       </section>
       <div class="news">
         <h2 class="visually-hidden">Блог и рассылка</h2>
@@ -211,13 +226,12 @@
         <section class="news-distrib">
           <div class="news-distrib-inner">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <div class="news-inner-form"
-            <form method="post" action="https://echo.htmlacademy.ru">
+            <div class="news-inner-form" <form method="post" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="news-mail">Электронная почта</label>
               <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
               <input type="submit" class="default-button news-form" value="Отправить" id="news-btn"></input>
-            </form>
-      </div>
+              </form>
+            </div>
           </div>
         </section>
       </div>
@@ -262,12 +276,12 @@
       <div class="footer-links">
         <ul class=footer-links-list>
           <div class="footer-links-left">
-          <li><a class="for-suppliers default-a footer-links-item" href=#>Для поставщиков</a></li>
-          <li><a class="default-a footer-links-item" href=#>О производстве</a></li>
+            <li><a class="for-suppliers default-a footer-links-item" href=#>Для поставщиков</a></li>
+            <li><a class="default-a footer-links-item" href=#>О производстве</a></li>
           </div>
           <div class="footer-links-right">
-          <li><a class="default-a footer-links-item" href=#>Наши документы</a></li>
-          <li><a class="default-a footer-links-item" href=#>Экологические стандарты</a></li>
+            <li><a class="default-a footer-links-item" href=#>Наши документы</a></li>
+            <li><a class="default-a footer-links-item" href=#>Экологические стандарты</a></li>
           </div>
         </ul>
       </div>
