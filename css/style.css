@@ -418,7 +418,7 @@ a.header-button:active {
   min-height: 280px;
   margin-bottom: 40px;
   padding: 0;
-  margin-top: -4px;
+  margin-top: -6px;
 }
 
 .features-container {
@@ -775,7 +775,9 @@ a.header-options-phone {
   border-radius: 25px;
   cursor: pointer;
 }
-
+.nav-catalog-current {
+  background-color: #d07058;
+}
 .header-button-current {
   color: #ffffff;
   /*класс для "Находимся на странице" в верхнем меню*/
@@ -1285,14 +1287,17 @@ html, body {
   top: 8px;
   left: 15px;
   background-image: url("../img/entrance.svg");
-  /*какая-то хрень с свг, у них цвета наоборот*/
+
   background-repeat: no-repeat;
 }
 
 .enter-container:hover .header-options-enter::after {
   background-image: url("../img/entrance-dark.svg");
 }
-
+.enter-container:hover  .header-options-enter{
+  color: #323232;
+  background-color: rgb(248, 247, 244);
+}
 
 .enter-container {
   position: relative;
@@ -1340,8 +1345,10 @@ right:0;
   margin-right: 10px;
 }
 
-.entry input:hover,
-.entry input:focus  {
+.entry-email:hover,
+.entry-email:focus,
+.entry-password:hover,
+.entry-password:focus {
   margin-bottom: 18px;
   margin-left: 9px;
   margin-right: 9px;
@@ -1372,6 +1379,8 @@ height: 47px;
     height: 50px;
   }
 .entry-button:hover {
+      font-size: 18px;
+  line-height: 24px;
   }
 
 .entry-actions {
@@ -1389,22 +1398,97 @@ height: 47px;
   display: block;
   }
 /*****************************************************/
+
+.feedback-container {
+ display: none; /*display: block; для отображения*/
+  position: fixed;
+background: rgba(0,0,0,0.3);
+top: 120px;
+  left: 50%;
+}
+.feedback {
+    position: absolute;
+  top: 338px;
+  left: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 24px;
+  padding-top: 17px;
+  width: 427px;
+  margin-left: -250px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback b {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+
+.feedback .default-input {
+  height: 42px;
+  width: 260px;
+  margin-bottom: 17px;
+}
+.feedback .fb-write {
+  width: 410px;
+  height: 140px;
+  resize: none;
+
+}
+
+.feedback-button {
+  height: 40px;
+  width: 120px;
+  align-self: right;
+}
+
+.feedback-close {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: none;
+}
+
+
+/***************************************************/
+
 .basket-container {
   margin-left: 6px;
   padding-bottom: 5px;
+  position: relative;
+  box-sizing: border-box;
+  width: 119px;
 }
 
 .header-options-basket {
   position: relative;
   background-color: rgb(161, 180, 169);
-  padding-left: 45px;
+padding-left: 45px;
+padding-right: 35px;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 35px;
+  width: 119px;
+  height: 33px;
   color: rgb(255, 255, 255);
   border-radius: 50px;
 }
-
+.full-basket {
+  padding-left: 47px;
+  padding-right: 18px;
+}
+.basket-container:hover  .header-options-basket{
+  color: #323232;
+  background-color: rgb(248, 247, 244);
+}
 .header-options-basket::after {
   position: absolute;
   z-index: 5;
@@ -1417,11 +1501,104 @@ height: 47px;
   /*какая-то хрень с свг, у них цвета наоборот*/
   background-repeat: no-repeat;
 }
-
+ .full-basket.header-options-basket::after {
+  position: absolute;
+  z-index: 5;
+  content: '';
+  width: 17px;
+  height: 17px;
+  top: 8px;
+  left: 16px;
+  background-image: url("../img/basket-full.svg");
+  /*какая-то хрень с свг, у них цвета наоборот*/
+  background-repeat: no-repeat;
+}
 .basket-container:hover .header-options-basket::after {
   background-image: url("../img/basket-empty-dark.svg");
 }
+.basket-container:hover .full-basket.header-options-basket::after {
+  background-image: url("../img/basket-full.svg");
+}
 
+/************************************/
+.basket-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+flex-direction: column;
+}
+.basket-content {
+  z-index: 10;
+  padding: 20px 16px;
+  background-color: rgb( 248, 247, 244);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 20px 0 rgba( 0, 0, 0, 0.4);
+  box-shadow: 0 20px 20px 0 rgba( 0, 0, 0, 0.4);
+  display: none;
+  width: 540px;
+}
+.basket-container::after {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  content: "";
+  width: 100px;
+  height: 40px;
+}
+
+.basket-container:hover .basket-content {
+display: block;
+position: absolute;
+top: 30px;
+right:0;
+}
+
+.basket-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-item-delete {
+  display: inline-block;
+  font-size: 0;
+ width: 11px;
+ height: 11px;
+ margin: 0;
+
+ margin-right: 15px;
+ background-color: transparent;
+ background-image: url("../img/cross-small.svg");
+ background-repeat: no-repeat;
+ background-size: 11px 11px;
+ border: none;
+ align-self: center;
+}
+
+.basket-item-title {
+  width: 216px;
+  display: inline-block;
+}
+.basket-item-img {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+.basket-item-order  {
+    display: inline-block;
+  align-self: flex-end;
+}
+
+.order-complete {
+  align-self: flex-end;
+}
+.complete-btn {
+  width: 170px;
+  height: 48px;
+
+}
+/*************************************************/
 .header-options-time {
   align-self: right;
 }
@@ -1775,7 +1952,7 @@ height: 47px;
 .popular-container {
   display: flex;
   justify-content: flex-start;
-  min-height: 370px;
+  min-height: 375px;
   margin: 0 auto;
 }
 
