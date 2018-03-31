@@ -42,16 +42,16 @@
                  <a class="header-options-btn header-options-search" href=#><span class="visually-hidden">Поиск</span></a>
                  <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
                    <label class="visually-hidden" for="search-input">Что ищем?</label>
-                   <input class="default-input search-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1"></input>
+                   <input class="default-input search-input" type="search" placeholder="Что ищем?" id="search-input" tabindex="-1">
                  </form>
                </div>
                <div class="enter-container">
                  <a class="header-options-btn header-options-enter" href=#>Вход</a>
                  <form class="entry" method="post" action="https://echo.htmlacademy.ru">
                    <label class="visually-hidden" for="entry-mail">Электронная почта</label>
-                   <input class="default-input entry-email" type="email" placeholder="Электронная почта" id="entry-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+                   <input class="default-input entry-email" type="email" placeholder="Электронная почта" id="entry-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+">
                    <label class="visually-hidden" for="entry-pass">Пароль</label>
-                   <input class="default-input entry-password" type="password" placeholder="Пароль" id="entry-pass" tabindex="-1" required></input>
+                   <input class="default-input entry-password" type="password" placeholder="Пароль" id="entry-pass" tabindex="-1" required>
                    <div class="entry-actions">
                      <div class="button-container">
                      <input type="submit" class="default-button entry-button" value="Войти" id="entry-btn" tabindex="-1">
@@ -125,7 +125,7 @@
        <div class="popular-container">
          <div class="catalog-list-item ">
            <a class="default-a " href=#>
-             <img src="img/ice1-1.png" width=267 height=267>
+             <img src="img/ice1-1.png" width=267 height=267 alt="карточка товара">
              <span class="cat-item-text"> Сливочное с апельсиновым джемом и цитрусовой стружкой </span>
            </a>
            <div class="catalog-list-item-price">
@@ -138,7 +138,7 @@
          </div>
          <div class="catalog-list-item ">
            <a class="default-a" href=#>
-            <img src="img/ice1-2.png" width=267 height=267>
+            <img src="img/ice1-2.png" width=267 height=267 alt="карточка товара">
             <span class="cat-item-text">Сливочно-кофейное с кусочками шоколада</span>
           </a>
            <div class="catalog-list-item-price">
@@ -151,7 +151,7 @@
          </div>
          <div class="catalog-list-item ">
            <a class="default-a" href=#>
-            <img src="img/ice1-3.png" width=267 height=267>
+            <img src="img/ice1-3.png" width=267 height=267 alt="карточка товара">
             <span class="cat-item-text">Сливочно-клубничное с присыпкой из белого шоколада</span>
           </a>
            <div class="catalog-list-item-price">
@@ -164,7 +164,7 @@
          </div>
          <div class="catalog-list-item ">
            <a class="default-a" href=#>
-            <img src="img/ice1-4.png" width=267 height=267>
+            <img src="img/ice1-4.png" width=267 height=267 alt="карточка товара">
             <span class="cat-item-text">Сливочное крем-брюле с карамельной подливкой</span>
           </a>
            <div class="catalog-list-item-price">
@@ -182,14 +182,18 @@
          <h2 class="visually-hidden">Наши преимущества</h2>
          <b>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
          <ul class="feature-list">
-           <div class="left-features">
+           <li class="left-features">
+             <ul class="left-ul">
              <li class="feature-item icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
              <li class="feature-item eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-           </div>
-           <div class="right-features">
+</ul>
+</li>
+           <li class="right-features">
+             <ul class="right-ul">
              <li class="feature-item cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
              <li class="feature-item thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
-           </div>
+</ul>
+           </li>
          </ul>
        </div>
      </section>
@@ -204,12 +208,15 @@
        <section class="news-distrib">
          <div class="news-distrib-inner">
            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-           <div class="news-inner-form" <form method="post" action="https://echo.htmlacademy.ru">
+
+             <form method="post" action="https://echo.htmlacademy.ru">
+               <div class="news-inner-form">
              <label class="visually-hidden" for="news-mail">Электронная почта</label>
-             <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+"></input>
-             <input type="submit" class="default-button news-form" value="Отправить" id="news-btn"></input>
+             <input type="email" class="default-input" placeholder="Электронная почта" id="news-mail" pattern="\S+@[a-z]+.[a-z]+">
+             <input type="submit" class="default-button news-form" value="Отправить" id="news-btn">
+</div>
              </form>
-           </div>
+
          </div>
        </section>
      </div>
@@ -228,9 +235,9 @@
              <button class="feedback-close" type="button" value="Закрыть окно обратной связи"></button>
              <b>Мы обязательно вам ответим!</b>
              <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-             <input class="default-input fb-name" type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required></input>
+             <input class="default-input fb-name" type="text" placeholder="Как вас зовут?" id="feedback-name" tabindex="-1" required>
              <label class="visually-hidden" for="feedback-mail">Ваша почта для ответа?</label>
-             <input class="default-input fb-email" type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+"></input>
+             <input class="default-input fb-email" type="email" placeholder="Ваша почта для ответа?" id="feedback-mail" tabindex="-1" required pattern="\S+@[a-z]+.[a-z]+">
              <label class="visually-hidden" for="feedback-write">Напишите что-нибудь...</label>
              <textarea class="default-input fb-write" placeholder="Напишите что-нибудь..." rows="3" id="feedback-write" tabindex="-1" required></textarea>
              <input type="submit" class="default-button feedback-button" value="Отправить" id="feedback-btn" tabindex="-1">
@@ -256,14 +263,18 @@
      </section>
      <div class="footer-links">
        <ul class=footer-links-list>
-         <div class="footer-links-left">
+         <li class="footer-links-left">
+           <ul class="footer-left-ul">
            <li><a class="for-suppliers default-a footer-links-item" href=#>Для поставщиков</a></li>
            <li><a class="default-a footer-links-item" href=#>О производстве</a></li>
-         </div>
-         <div class="footer-links-right">
+         </ul>
+       </li>
+       <li class="footer-links-right">
+          <ul class="footer-right-ul">
            <li><a class="default-a footer-links-item" href=#>Наши документы</a></li>
            <li><a class="default-a footer-links-item" href=#>Экологические стандарты</a></li>
-         </div>
+</ul>
+         </li>
        </ul>
      </div>
      <div class="footer-maker">

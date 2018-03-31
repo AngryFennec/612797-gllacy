@@ -498,7 +498,11 @@ a.header-button:active {
   flex-direction: column;
   width: 485px;
 }
-
+.left-ul, .right-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .blog {
   width: 560px;
   margin-left: 29px;
@@ -869,6 +873,7 @@ a.header-options-phone {
   position: relative;
   display: flex;
   justify-content: flex-start;
+    height: 55px;
 }
 
 .price-value {
@@ -1193,6 +1198,11 @@ width: 26px;
   padding-top: 23px;
 }
 
+.footer-left-ul, .footer-right-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /*стили сетки*/
 
 html, body {
@@ -1552,7 +1562,6 @@ padding-right: 35px;
   top: 8px;
   left: 16px;
   background-image: url("../img/basket-full.svg");
-  /*какая-то хрень с свг, у них цвета наоборот*/
   background-repeat: no-repeat;
 }
 .basket-container:hover .header-options-basket::after {
