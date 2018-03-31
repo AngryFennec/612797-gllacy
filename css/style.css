@@ -1041,8 +1041,8 @@ padding-left: 23px;
   margin-top: 7px;
   min-height: 27px;
   padding: 0px 15px;
-  padding-top: 6px;
-  padding-bottom: 4px;
+  padding-top: 2px;
+  padding-bottom: 8px;
   padding-right: 20px;
   position: relative;
   background: rgba(255, 255, 255, 0.2);
@@ -1078,7 +1078,7 @@ padding-left: 23px;
   position: absolute;
   width: 20px;
   height: 20px;
-  top: -4px;
+  top: -2px;
   left: -32px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -1234,6 +1234,7 @@ html, body {
   min-height: 53px;
   margin: 0;
   padding: 0;
+  margin-top: 2px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -1255,8 +1256,8 @@ html, body {
   position: absolute;
   content: "";
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   top: 7px;
   left: 9px;
   background-image: url("../img/loupe.svg");
@@ -1334,10 +1335,10 @@ html, body {
   position: absolute;
   z-index: 5;
   content: '';
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   top: 8px;
-  left: 15px;
+  left: 17px;
   background-image: url("../img/entrance.svg");
 
   background-repeat: no-repeat;
@@ -1518,7 +1519,7 @@ top: 120px;
   padding-bottom: 5px;
   position: relative;
   box-sizing: border-box;
-  width: 119px;
+  width: 117px;
 }
 
 .header-options-basket {
@@ -1543,12 +1544,12 @@ padding-right: 35px;
 }
 .header-options-basket::after {
   position: absolute;
-  z-index: 5;
+  z-index: 50;
   content: '';
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   top: 8px;
-  left: 16px;
+  left: 17px;
   background-image: url("../img/basket-empty.svg");
   /*какая-то хрень с свг, у них цвета наоборот*/
   background-repeat: no-repeat;
@@ -1557,10 +1558,10 @@ padding-right: 35px;
   position: absolute;
   z-index: 5;
   content: '';
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   top: 8px;
-  left: 16px;
+  left: 17px;
   background-image: url("../img/basket-full.svg");
   background-repeat: no-repeat;
 }
@@ -1806,7 +1807,7 @@ right:0;
   flex-direction: column;
   justify-content: space-between;
   min-height: 30px;
-  margin-top: -7px;
+  margin-top: -4px;
   margin-right: 28px;
   margin-left: auto;
 }
@@ -1842,7 +1843,7 @@ right:0;
   min-height: 198px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .filter {
