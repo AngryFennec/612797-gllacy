@@ -269,7 +269,7 @@ img {
 
 .default-button {
   display: inline-block;
-
+  vertical-align: baseline;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -279,7 +279,9 @@ img {
   color: #ffffff;
   white-space: pre;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background-image:     -ms-linear-gradient( 90deg, rgb(202, 56, 36) 0%, rgb(242, 104, 67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(202, 56, 36) 0%, rgb(242, 104, 67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(202, 56, 36) 0%, rgb(242, 104, 67) 100%);
+background-image: -moz-linear-gradient( 90deg, rgb(202, 56, 36) 0%, rgb(242, 104, 67) 100%);
   border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
@@ -294,6 +296,8 @@ img {
   line-height: 18px;
   font-family: "Roboto", Arial, sans-serif;
   color: #fefefe;
+  background-image: -moz-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image:     -ms-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
           box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.004);
@@ -306,6 +310,8 @@ img {
   font-family: "Roboto", Arial, sans-serif;
   color: #fceeec;
   background-image:     -ms-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   -webkit-box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
           box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
 }
@@ -2620,4 +2626,8 @@ body {
   height: 13px;
 
   background-image: url(../img/heart.svg);
+}
+.drop-menu-item {
+  text-decoration: none;
+  color: #323232;
 }
