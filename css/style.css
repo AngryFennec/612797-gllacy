@@ -95,13 +95,11 @@ body {
 
   width: 700px;
 margin: 0 auto;
-margin-bottom: 27px;
-
+margin-bottom: 31px;
+margin-top: -3px;
   font-weight: 700;
   font-size: 61px;
   line-height: 60.35px;
-
-
 }
 
 
@@ -665,17 +663,17 @@ background-color: #eee1c9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 .news-inner-form input[type="email"] {
-  min-width: 355px;
-  margin-right: 7px;
+  min-width: 350px;
+  margin-right: 3px;
   padding-left: 10px;
+  padding-top:4px;
 }
 
 .news-inner-form input[type="email"]:hover {
-  margin-right: 5px;
 }
 
 .news-inner-form input[type="submit"] {
@@ -796,28 +794,31 @@ a.header-options-phone {
   line-height: 18px;
 }
 
+
+
+
 .default-input {
-  background-color: rgb(255, 255, 255);
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(178, 178, 178);
+  outline: none;
+  border-width: 0px;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 10px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .default-input:hover {
-  background-color: rgb(255, 255, 255);
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(154, 154, 154);
+  border-width: 0px;
   border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
 }
 
 .default-input:focus {
-  background-color: rgb(255, 255, 255);
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgb(46, 136, 228);
+  border-width: 0px;
   border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
 
 .basket-content {
@@ -1656,18 +1657,8 @@ body {
   margin-left: 10px;
   padding-left: 14px;
 
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
 }
 
-.entry-email:hover,
-.entry-email:focus,
-.entry-password:hover,
-.entry-password:focus {
-  margin-right: 9px;
-  margin-bottom: 18px;
-  margin-left: 9px;
-}
 
 
 .entry-link {
@@ -1727,15 +1718,29 @@ body {
 }
 /*****************************************************/
 
-.feedback-container {
+.feedback-overlay {
   position: fixed;
-  top: 120px;
-  left: 50%;
-
-  display: none; /*display: block; для отображения*/
-
-  background: rgba(0,0,0,0.3);
+  display: none;
+  top: 0;
+left: 0;
+width: 100vw;
+  height: 100vh;
+background: rgba(0, 0, 0, 0.3);
+z-index: 200;
 }
+.feedback-container {
+  /*position: fixed;*/
+top: -10%;
+  left: 50%;
+display: block;
+/*  display: none; /*display: block; для отображения*/
+opacity: 1;
+}
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .feedback {
   position: absolute;
   top: 338px;
@@ -2119,11 +2124,12 @@ vertical-align: baseline;
 }
 
 .map-adress-text {
-  margin-top: -1px;
+margin-top: 3px;
   margin-bottom: 1px;
 }
 
 .map-adress-order {
+  margin-top: 12px;
   margin-bottom: 9px;
 }
 
@@ -2594,7 +2600,7 @@ vertical-align: baseline;
   width: 393px;
   margin: 0;
   padding: 0;
-  padding-top: 32px;
+  padding-top: 35px;
 }
 
 .footer-links-left {
@@ -2656,3 +2662,100 @@ vertical-align: baseline;
   text-decoration: none;
   color: #323232;
 }
+/*анимация модалки*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
+.fb-name,
+.fb-email,
+.fb-write {
+
+  outline: none;
+  height: 44px;
+  padding: 0 10px;
+  background-color: white;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(178, 178, 178, 0.52);
+}
+
+.fb-name:hover,
+.fb-email:hover,
+.fb-write:hover {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 2px rgba(154, 154, 154, 0.52);
+}
+
+.fb-name:focus,
+.fb-email:focus,
+.fb-write:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
+  box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+.fb-write {
+   min-height: 155px;
+}
+/*
+.fb-name,
+.fb-email {
+  width: 225px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding-left: 14px;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.fb-name:hover,
+.fb-email:focus,
+.fb-name:hover,
+.fb-email:focus {
+  margin-bottom: 17px;
+
+}
+*/
