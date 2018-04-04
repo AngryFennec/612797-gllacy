@@ -66,6 +66,10 @@ body {
   padding: 0 20px;
 }
 
+.slider-item {
+
+  text-align: center;
+}
 .slider {
   position: relative;
 
@@ -86,15 +90,20 @@ body {
   display: none;
 }
 
-.slide-title {
-  width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
 
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 60px;
+.slide-title {
+
+  width: 700px;
+margin: 0 auto;
+margin-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 60.35px;
+
+
 }
+
 
 .button {
   display: inline-block;
@@ -251,7 +260,7 @@ img {
   position: relative;
 
   width: auto;
-
+  background-color: #f7f1d9;
   background-image: url("../img/map-with-pin.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -390,7 +399,7 @@ a.header-button:active {
 }
 
 .bonus-item:nth-child(3) {
-  background-color: #a03472;
+  background-color: #391f12;
   background-image: url("../img/choko-back.jpg");
   background-repeat: no-repeat;
 }
@@ -498,7 +507,7 @@ a.header-button:active {
   padding-left: 18px;
 
   color: #333333;
-
+background-color: #eee1c9;
   background-image: url("../img/waffle.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -510,6 +519,7 @@ a.header-button:active {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  letter-spacing: 0.08px;
 }
 
 .feature-item {
@@ -955,6 +965,7 @@ border-radius: 5px;
 
   -webkit-appearance: none;
      -moz-appearance: none;
+     -ms-appearance: none;
           appearance: none;
 }
 
@@ -1270,7 +1281,7 @@ vertical-align: baseline;
   left: -30px;
 
   display: inline-block;
-  width: 20px;
+  width: 24px;
   height: 20px;
 vertical-align: baseline;
   background-image: url("../img/checkbox-off.svg");
@@ -1281,7 +1292,7 @@ vertical-align: baseline;
 }
 
 .filler-input:checked + .filler-label::before {
-
+background-size: 24px 20px;
 
   background-image: url("../img/checkbox-on.svg");
 
@@ -2173,6 +2184,7 @@ vertical-align: baseline;
   min-height: 30px;
   margin-top: -4px;
   margin-right: 28px;
+  margin-bottom: -4px;
   margin-left: auto;
 }
 
