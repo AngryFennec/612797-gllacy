@@ -946,7 +946,14 @@ border-radius: 5px;
 .filter-row fieldset {
   border: none;
 }
-
+.sorting-options::-ms-expand {
+ /* IE 8 */
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+ /* IE 5-7 */
+ filter: alpha(opacity=0);
+ /* Good browsers :) */
+ opacity:0;
+}
 .sorting-options {
   width: 195px;
   height: 37px;
@@ -955,7 +962,6 @@ border-radius: 5px;
   font-weight: 700;
   color: #ffffff;
 
-  background-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.2);
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
@@ -986,9 +992,15 @@ border-radius: 5px;
   padding-left: 25px;
 }
 
-.sorting-options option {
+
+.sorting-options optgroup {
   color: #ffffff;
 
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sorting-options option {
+  color: #333333;
+font-weight: 700;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
