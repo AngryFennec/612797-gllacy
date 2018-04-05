@@ -444,6 +444,25 @@ a.header-button:active {
   font-size: 30px;
   line-height: 45px;
   color: #ffffff;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 36px;
+}
+.catalog-list-item-price-unit::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -33px;
+  display: block;
+  width: 31px;
+  height: 36px;
+  background-image: url("../img/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 31px 36px;
+  -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
 }
 
 .catalog-list-item a {
@@ -1520,7 +1539,7 @@ body {
   left: 9px;
 
   display: block;
-  width: 20px;
+  width: 21px;
   height: 20px;
 
   background-image: url("../img/loupe.svg");
@@ -1608,10 +1627,10 @@ body {
   content: "";
   position: absolute;
   top: 8px;
-  left: 17px;
+  left: 15px;
   z-index: 5;
 
-  width: 20px;
+  width: 21px;
   height: 20px;
 
   background-image: url("../img/entrance.svg");
@@ -1868,25 +1887,23 @@ opacity: 1;
   content: "";
   position: absolute;
   top: 8px;
-  left: 17px;
+  left: 16px;
   z-index: 50;
 
-  width: 20px;
+  width: 21px;
   height: 20px;
 
   background-image: url("../img/basket-empty.svg");
-
-/*какая-то хрень с свг, у них цвета наоборот*/
   background-repeat: no-repeat;
 }
 .full-basket.header-options-basket::after {
   content: "";
   position: absolute;
   top: 8px;
-  left: 17px;
+  left: 16px;
   z-index: 5;
 
-  width: 20px;
+  width: 21px;
   height: 20px;
 
   background-image: url("../img/basket-full.svg");
@@ -2446,6 +2463,7 @@ margin-top: 3px;
 .popular {
   width: 1200px;
   margin: 0 auto;
+  margin-top: 3px;
 }
 
 .popular-container {
@@ -2460,7 +2478,7 @@ margin-top: 3px;
 }
 
 .popular-container .catalog-list-item:first-child {
-  margin-left: 27px;
+  margin-left: 28px;
 }
 
 .cat-row {
@@ -2520,12 +2538,7 @@ margin-top: 3px;
   background-image: url(../img/hit.svg);
 }
 
-.cat-item-text {
-  display: inline-block;
-  vertical-align: baseline;
-  margin: 0 6px;
-  margin-top: -1px;
-}
+
 .cat-item-text {
   display: inline;
 
@@ -2586,21 +2599,12 @@ margin-top: 3px;
 }
 
 
-.catalog-list-item:not(.in-catalog) {
-  margin-top: 2px;
-  margin-right: 16px;
-}
-
-.catalog-list-item:not(.in-catalog) .cat-item-text {
-  margin: 0 6px;
-  margin-top: 3px;
-}
 .text-container {
+  width: 255px;
   display: block;
-  margin: 0;
-  margin-top: -1px;
-  margin-right: 5px;
-  margin-left: 2px;
+  margin: 0 auto;
+  margin-top: -2px;
+
 }
 
 /*конец карточки каталога*/
