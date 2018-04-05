@@ -567,7 +567,7 @@ background-color: #eee1c9;
           justify-content: flex-start;
   margin-top: 20px;
   margin-right: 24px;
-  margin-left: 15px;
+  margin-left: 16px;
 
   list-style: none;
 }
@@ -581,7 +581,7 @@ background-color: #eee1c9;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 485px;
-  margin-right: 85px;
+  margin-right: 86px;
 }
 
 .right-features {
