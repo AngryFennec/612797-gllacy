@@ -394,12 +394,15 @@ a.header-button:active {
   background-color: #a03472;
   background-image: url("../img/raspberry-back.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .bonus-item:nth-child(3) {
   background-color: #391f12;
   background-image: url("../img/choko-back.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bonus-item b {
@@ -410,6 +413,7 @@ a.header-button:active {
 .bonus-item p {
   font-size: 18px;
   line-height: 22px;
+
 }
 
 /*выровнять позиционирование!*/
