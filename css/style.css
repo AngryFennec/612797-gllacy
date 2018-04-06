@@ -491,11 +491,13 @@ a.header-button:active {
 
 .footer-maker {
   width: 220px;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-right: 0;
   padding-left: 10px;
 }
-
+.index-footer .footer-maker {
+  padding-top: 15px;
+}
 .footer-maker img {
   padding-left: 7px;
 }
@@ -1461,7 +1463,7 @@ vertical-align: baseline;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 20px;
 }
 
 .footer-left-ul,
@@ -2629,6 +2631,10 @@ margin-top: 3px;
   padding: 0;
   padding-top: 32px;
 }
+.index-footer .footer-links-list{
+  padding-top: 30px;
+
+}
 
 .footer-links-left {
   position: relative;
@@ -2669,7 +2675,12 @@ margin-top: 3px;
 vertical-align: baseline;
   text-align: left;
 }
-
+.footer-left-ul li:first-child {
+  padding-bottom: 4px;
+}
+.footer-right-ul li:first-child {
+  padding-bottom: 4px;
+}
 .for-suppliers {
   font-weight: 700;
 }
@@ -2766,23 +2777,3 @@ vertical-align: baseline;
 .fb-write {
    min-height: 155px;
 }
-/*
-.fb-name,
-.fb-email {
-  width: 225px;
-  height: 44px;
-  margin-bottom: 20px;
-  padding-left: 14px;
-
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-}
-
-.fb-name:hover,
-.fb-email:focus,
-.fb-name:hover,
-.fb-email:focus {
-  margin-bottom: 17px;
-
-}
-*/
