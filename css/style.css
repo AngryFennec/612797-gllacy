@@ -491,7 +491,7 @@ a.header-button:active {
 
 .footer-maker {
   width: 220px;
-  padding-top: 18px;
+  padding-top: 16px;
   padding-right: 0;
   padding-left: 10px;
 }
@@ -1461,7 +1461,7 @@ vertical-align: baseline;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0;
-  padding-top: 23px;
+  padding-top: 21px;
 }
 
 .footer-left-ul,
@@ -2068,6 +2068,7 @@ vertical-align: baseline;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
+
 }
 
 .bonus-item {
@@ -2196,6 +2197,7 @@ margin-top: 3px;
   width: 1200px;
   min-height: 105px;
   margin: 0 auto;
+
 }
 
 .phone-href-container {
@@ -2625,7 +2627,7 @@ margin-top: 3px;
   width: 393px;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 32px;
 }
 
 .footer-links-left {
