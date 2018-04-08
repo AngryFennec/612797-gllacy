@@ -7,8 +7,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-/*фоны для сетки*/
-
 .body-index {
   background-repeat: no-repeat;
   background-position: top center;
@@ -17,8 +15,6 @@ body {
 
 .body-catalog {
   background-color: #849d8f;
-
-/*background-image: url("../img/gllacy-catalog-1200.jpg");*/
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1200px auto;
@@ -1781,11 +1777,9 @@ background: rgba(0, 0, 0, 0.3);
 z-index: 200;
 }
 .feedback-container {
-  /*position: fixed;*/
-top: -10%;
+  top: -10%;
   left: 50%;
 display: block;
-/*  display: none; /*display: block; для отображения*/
 opacity: 1;
 }
 .modal-show {
@@ -1795,7 +1789,7 @@ opacity: 1;
 
 .feedback {
   position: absolute;
-  top: 20%;
+  top: 5%;
   left: 50%;
 
   display: -webkit-box;
